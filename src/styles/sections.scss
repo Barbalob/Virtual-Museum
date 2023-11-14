@@ -1,45 +1,48 @@
 @import 'variables';
 @import 'mixin';
-.main__sections{
+
+.main__sections {
     @include defaultWidth;
 
-    background:url('../assets/image3.png'),url('../assets/image4.png');
+    background: url('../assets/image3.png'), url('../assets/image4.png');
     // background-image: , ;
     background-repeat: no-repeat;
-    background-position: left, right;  
+    background-position: left, right;
     background-size: auto 100%, auto 100%;
-    
-    
-    .sections-list{
-        
+
+
+    .sections-list {
+
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 40px;
-        gap:44px;
-        &-item{
+        gap: 44px;
+
+        &-item {
             width: 617px;
             position: relative;
-            &:before{
-                position:absolute;
+
+            &:before {
+                position: absolute;
                 bottom: -22px;
-                left:10%;
-                width:500px;
-                border-bottom:5px solid #BFA181;
-                content:"";
+                left: 10%;
+                width: 500px;
+                border-bottom: 5px solid #BFA181;
+                content: "";
             }
         }
 
-        &-item:nth-last-child(1){
-            &:before{
-                width:0px;
-                border-bottom:0 solid #BFA181;
-                content:"";
+        &-item:nth-last-child(1) {
+            &:before {
+                width: 0px;
+                border-bottom: 0 solid #BFA181;
+                content: "";
             }
         }
-        
-        
-        .sections-button{
+
+
+        .sections-button {
             color: #BFA181;
             padding: 30px 40px;
             text-align: center;
@@ -50,32 +53,47 @@
             font-weight: 400;
             line-height: normal;
             width: 617px;
-            height: 137px;border-radius: 10px;
+            height: 137px;
+            border-radius: 10px;
             background: #331F00;
 
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+            transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: #BFA181;
+                outline: 0;
+            }
+        }
+
+        .sections-button:hover {
+            color: #331F00;
+            box-shadow: 0 0 100px 2em #BFA181 inset;
         }
     }
 }
 
 //
 @media (max-width: 991px) {
-    .main__sections{
-        .sections-list{
+    .main__sections {
+        .sections-list {
             padding: 40px;
-            gap:22px;
-            &-item{
-                width:417px;
+            gap: 22px;
+
+            &-item {
+                width: 417px;
                 position: relative;
-                &:before{
+
+                &:before {
                     bottom: -11px;
-                    left:11%;
-                    width:320px;
-                    border-bottom:3px solid #BFA181;
+                    left: 11%;
+                    width: 320px;
+                    border-bottom: 3px solid #BFA181;
                 }
             }
 
-            .sections-button{
+            .sections-button {
                 padding: 5px 20px;
                 font-size: 24px;
                 width: 417px;
@@ -86,21 +104,23 @@
 }
 
 @media (max-width: 767px) {
-    .main__sections{
-        .sections-list{
+    .main__sections {
+        .sections-list {
             padding: 20px;
-            gap:20px;
-            &-item{
+            gap: 20px;
+
+            &-item {
                 width: 330px;
                 position: relative;
-                &:before{
+
+                &:before {
                     bottom: -10px;
-                    width:260px;
-                    border-bottom:3px solid #BFA181;
+                    width: 260px;
+                    border-bottom: 3px solid #BFA181;
                 }
             }
 
-            .sections-button{
+            .sections-button {
                 padding: 5px 10px;
                 font-size: 16px;
                 width: 330px;
@@ -111,21 +131,23 @@
 }
 
 @media (max-width: 560px) {
-    .main__sections{
-        .sections-list{
+    .main__sections {
+        .sections-list {
             padding: 20px;
-            gap:14px;
-            &-item{
+            gap: 14px;
+
+            &-item {
                 width: 230px;
                 position: relative;
-                &:before{
+
+                &:before {
                     bottom: -7px;
-                    width:175px;
-                    border-bottom:2px solid #BFA181;
+                    width: 175px;
+                    border-bottom: 2px solid #BFA181;
                 }
             }
 
-            .sections-button{
+            .sections-button {
                 padding: 5px 10px;
                 font-size: 14px;
                 width: 230px;

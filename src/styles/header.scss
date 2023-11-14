@@ -21,21 +21,27 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+                background-image: linear-gradient($background 50%, $colorBackgroundEmblem 50%);
+                background-size: auto 200%;
+                transition: all .3s ease-in-out;
+            
+                &:hover {
+                    color: #ffd085;
+                        
+                }
                 
             }
-            a:hover {
-                box-shadow: inset 100px 0 0 0 #D65472;
-                ;
-                }
-            
+           
             &::before{
                 content: url('../assets/icon/crown.svg');
                 position:absolute;
                 z-index:100;
                 left:-20px;
                 top: 1px;
+                
             }
+            
+            
         }
     }
 }
