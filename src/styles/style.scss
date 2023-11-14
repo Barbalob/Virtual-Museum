@@ -1,0 +1,16 @@
+@import 'nullstyle.scss';
+@import 'variables';
+@import 'header';
+@import 'title';
+@import 'emblem';
+@import 'description';
+@import 'main-button';
+@import 'sections';
+body{
+    background: $background; 
+    overflow-x: hidden;
+}
+
+.main-page{
+    font-family: 'Roboto Slab', serif;
+}

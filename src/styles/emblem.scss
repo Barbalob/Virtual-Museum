@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixin';
+.main__emblem{
+    width: 100vw;
+    background: $colorBackgroundEmblem;
+    .emblem-wrapper{
+        padding: 32px 40px;
+        @include defaultWidth;
+        display: flex;
+        justify-content: space-around;
+        .emblem-text{
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+}
