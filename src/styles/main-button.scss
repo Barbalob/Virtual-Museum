@@ -18,3 +18,47 @@
         line-height: normal;
     }
 }
+
+//HD
+@media (min-width: 992px) and (max-width: 1499px) {
+    .main__choice{
+        @include defaultWidth($maxWidthHD);
+        gap: 30px;
+        margin-bottom: 82px;
+        &-button{
+            width: 50%;
+            height: 115px;
+            border-radius: 10px;
+            font-size: 32px;
+        }
+    }
+}
+
+//
+@media (max-width: 991px) {
+    .main__choice{
+        @include defaultWidth(750px);
+        gap: 30px;
+        margin-bottom: 82px;
+        &-button{
+            width: 50%;
+            height: 100px;
+            border-radius: 10px;
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main__choice{
+        padding: 0 5px;
+        gap: 15px;
+        margin-bottom: 20px;
+        &-button{
+            width: 50%;
+            height: 70px;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+    }
+}

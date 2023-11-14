@@ -21,45 +21,20 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+                
             }
+            a:hover {
+                box-shadow: inset 100px 0 0 0 #D65472;
+                ;
+                }
+            
             &::before{
                 content: url('../assets/icon/crown.svg');
                 position:absolute;
                 z-index:100;
                 left:-20px;
                 top: 1px;
-            }
-        }
-    }
-}
-
-
-//HD
-@media (min-width: 992px) and (max-width: 1499px) {
-    .main__header{
-        @include defaultWidth($maxWidthHD);
-        margin-bottom: 30px;
-        .nav-list{
-            column-gap: 50px;
-            row-gap: 20px;
-            padding: 40px 40px 12px;
-        }
-    }
-}
-
-@media (min-width: 850px) and (max-width: 991px) {
-    .main__header{
-        @include defaultWidth($maxWidthHD);
-        margin-bottom: 30px;
-        .nav-list{
-            column-gap: 30px;
-            row-gap: 20px;
-            padding: 30px 40px 12px;
-            &-item{
-                width: 160px;
-                a{
-                    font-size: 12px;
-                }
             }
         }
     }
