@@ -45,3 +45,35 @@
         }
     }
 }
+
+
+//HD
+@media (min-width: 992px) and (max-width: 1499px) {
+    .main__header{
+        @include defaultWidth($maxWidthHD);
+        margin-bottom: 30px;
+        .nav-list{
+            column-gap: 50px;
+            row-gap: 20px;
+            padding: 40px 40px 12px;
+        }
+    }
+}
+
+@media (min-width: 850px) and (max-width: 991px) {
+    .main__header{
+        @include defaultWidth($maxWidthHD);
+        margin-bottom: 30px;
+        .nav-list{
+            column-gap: 30px;
+            row-gap: 20px;
+            padding: 30px 40px 12px;
+            &-item{
+                width: 160px;
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
