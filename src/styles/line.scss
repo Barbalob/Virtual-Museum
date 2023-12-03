@@ -3,6 +3,14 @@
 .line-header, .line-title{
     border-bottom: $colorTextHeader solid 1px;
 }
+ 
+.line{
+    background: #331F00;
+    width: 350px;
+    height: 2px;
+    margin-bottom: 30px;
+}
+
 
 @media (max-width:849px) {
     .line-header {
