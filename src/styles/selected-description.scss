@@ -1,0 +1,205 @@
+@import 'variables';
+@import 'mixin';
+.selected-description{
+    @include defaultWidth;
+    position: relative;
+    .description-arrow{
+        position: absolute;
+        top:50%;
+        right: 0;
+        &-left{
+            left:0;
+            transform: rotate(180deg);
+        }
+    }
+    
+    .selected-description-item{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        figure.item-emblem{
+            width: 650px;
+            background-color:rgba(154, 126, 95, 1);
+            padding: 20px;
+            border-radius:10px;
+            text-align: center;
+            margin-bottom: 64px;
+            .item-emblem-img{
+                object-fit: contain;
+                max-width: 100%;
+            }
+            .item-emblem-text{
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.selected-description-item{
+    .item-description{
+        width: 600px;
+        color: #FDF8F0;    
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 50px;
+    }
+    .item-description{
+        max-height: 400px;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    .item-title{
+        color: #FDF8F0;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height:  100%;
+        margin-bottom: 30px;
+    }
+
+    .item-list-description{
+        width: 600px;
+        .list-description-item{
+            position: relative;
+            
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 233.333%;
+            &::before {
+                content: url('../assets/icon/crown.svg');
+                position: absolute;
+                z-index: 100;
+                left: -24px;
+            }
+            &-link {
+                color: #FDF8F0;
+                &:hover {
+                    color: $menuHoverColor;
+                }
+            }
+        }
+    }
+}
+
+//HD
+@media (min-width: 992px) and (max-width: 1499px) {
+    .selected-description{
+        @include defaultWidth($maxWidthHD);
+    }
+}
+
+//Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {
+    .selected-description{
+        width: 100vw; 
+        .selected-description-item{
+            figure.item-emblem{
+                width: 600px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .selected-description-item{
+        .item-description{
+            width: 550px;
+        }
+        .item-description{
+            max-height: 400px;
+        }
+        .item-title{
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+    
+        .item-list-description{
+            width: 550px;
+            .list-description-item{  
+                font-size: 24px;
+                line-height: 233.333%;
+                &::before {
+                    content: url('../assets/icon/crown.svg');
+                    position: absolute;
+                    z-index: 100;
+                    left: -24px;
+                }
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767px){
+    .selected-description{
+        width: 100vw; 
+        .description-arrow{
+            position: absolute;
+            bottom:15px;
+            top:auto;
+            right: 15px;
+            &-left{
+                left:15px;
+                transform: rotate(180deg);
+            }
+        }
+        .selected-description-item{
+            figure.item-emblem{
+                width: 90%;
+                margin-bottom: 40px;
+                .item-emblem-text{
+                    text-align: center;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+    .selected-description-item{
+        .item-description{
+            width: 80%;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 30px;
+        }
+        .item-description{
+            max-height: 400px;
+        }
+        .item-title{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    
+        .item-list-description{
+            width: 80%;
+            margin-bottom: 50px;
+            .list-description-item{  
+                font-size: 18px;
+                line-height: 233.333%;
+                &::before {
+                    content: url('../assets/icon/crown.svg');
+                    position: absolute;
+                    z-index: 100;
+                    left: -24px;
+                }
+            }
+        }
+    }
+}
+   
