@@ -1,0 +1,65 @@
+@import 'variables';
+@import 'mixin';
+.split-description-list{
+    @include defaultWidth;
+    display: flex;
+    gap: 20px;
+    &-item{
+
+        width: 50%;
+        text-align: left;
+        padding: 20px;
+        text-align: center;
+        a{
+            color: #9A7E5F;
+            text-align: center;
+            font-family: Inter;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        p{
+            text-align: left;
+            color: #FDF8F0;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+//HD
+@media (min-width: 992px) and (max-width: 1499px) {
+    .split-description-list{
+        @include defaultWidth($maxWidthHD);
+    }
+}
+
+//Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {
+    .split-description-list{
+        @include defaultWidth($maxWidthHD);
+    }
+}
+
+@media (max-width: 767px) {
+    .split-description-list{
+        width: 100vw;
+        gap: 10px;
+        padding-bottom: 10px;
+        &-item{
+            padding: 0 20px;
+            a{
+                font-size: 22px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}

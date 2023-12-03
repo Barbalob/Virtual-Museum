@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixin';
+.line-header, .line-title{
+    border-bottom: $colorTextHeader solid 1px;
+}
+
+@media (max-width:849px) {
+    .line-header {
+        border-bottom: $colorTextHeader solid 0px;
+    }
+}

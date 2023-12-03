@@ -3,9 +3,12 @@
 @import 'header';
 @import 'title';
 @import 'emblem';
+@import 'emblem2';
 @import 'description';
 @import 'main-button';
 @import 'sections';
+@import 'line';
+@import 'splitDescription';
 body{
     background: $background; 
     overflow-x: hidden;

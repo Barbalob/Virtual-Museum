@@ -1,5 +1,9 @@
-
+@import 'variables';
+@import 'mixin';
 .main__title{
+    @include defaultWidth;
+    padding: 0 5px;
+    padding-bottom: 20px;
     text-align: center;
     text-align: center;
     font-size: 56px;
@@ -7,13 +11,74 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.68px;
-
     color: transparent;    
 	-webkit-background-clip: text;
 	background-clip: text;
-
     background-image: linear-gradient(0deg, rgba(255, 238, 203, 0.99) 0%, rgba(255, 238, 203, 0.99) 100%), linear-gradient(329deg, rgba(255, 255, 255, 0.00) 72.28%, #FFF 131.36%), linear-gradient(82deg, #6E7D81 12.48%, #BABABA 27.24%, #848B8A 51.72%, #737F82 59.97%, #90A3A8 83.12%, #717E81 91.84%, #7D898C 98.26%);
     background-blend-mode: color, overlay, normal;
     margin-bottom: 60px;
+}
 
+.other__title{
+    @include defaultWidth;
+    padding: 5px 5px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+    background-image: linear-gradient(0deg, rgba(255, 238, 203, 0.99) 0%, rgba(255, 238, 203, 0.99) 100%), linear-gradient(329deg, rgba(255, 255, 255, 0.00) 72.28%, #FFF 131.36%);
+    background-blend-mode: color, overlay, normal;
+    margin-bottom: 55px;
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1499px) {
+    .main__title{
+        @include defaultWidth($maxWidthHD);
+        font-size: 49px;
+        margin-bottom: 40px;
+    }
+    .other__title{
+        @include defaultWidth($maxWidthHD);
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+//
+@media (max-width: 991px) {
+    .main__title{
+        @include defaultWidth($maxWidthHD);
+        font-size: 38px;
+
+        margin-bottom: 40px;
+    }
+    .other__title{
+        @include defaultWidth($maxWidthHD);
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main__title{
+        font-size: 30px;
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .other__title{
+        font-size: 25px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
 }

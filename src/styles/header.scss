@@ -2,7 +2,7 @@
 @import 'mixin';
 
 .main__header {
-    border-bottom: $colorTextHeader solid 1px;
+    // border-bottom: $colorTextHeader solid 1px;
     @include defaultWidth;
     margin-bottom: 50px;
 
