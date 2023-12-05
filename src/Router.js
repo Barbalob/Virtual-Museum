@@ -41,6 +41,12 @@ export class Router{
         case 'cards-en':
             app.innerHTML = routerList['cards-en']
             break
+        case 'cards-slider-en':
+            app.innerHTML = routerList['cards-slider-en']
+            break
+        case 'cards-slider-rus':
+            app.innerHTML = routerList['cards-slider-rus']
+            break
             
             
       

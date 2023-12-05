@@ -286,7 +286,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, rem mollitia unde 
   </p>
   <h3 class="cards-title-list">Список подразделов</h3>
   <ul class="cards-list-description">
-    <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#">Сакральные пространства</a></li>
+    <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#cards-slider-en">Хорография в Англии</a></li>
     <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#">Переходная эпоха</a></li>
     <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#">Территорификация</a></li>
     <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#">Субъективность и воображение</a></li>
@@ -310,12 +310,54 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, rem mollitia unde 
     Beatae deserunt cum rerum illum necessitatibus, fugiat assumenda omnis eligendi reprehenderit placeat architecto consectetur doloremque repudiandae nisi laborum temporibus eos non? Quod voluptatem consequuntur eligendi hic, dolore voluptate enim ipsum.
     Culpa, perferendis ex nesciunt, qui itaque beatae veniam temporibus architecto non, eaque enim quisquam delectus incidunt! Perspiciatis eius labore debitis molestias laborum dolor, iste voluptates illo eaque, expedita commodi voluptatum.
   </p>
-  <h3 class="cards-title-list">Список подразделов</h3>
+  <h3 class="cards-title-list">Список статей</h3>
   <ul class="cards-list-description">
-    <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#">Сакральные пространства</a></li>
+    <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#cards-slider-rus">Государевы изографы - Симон Ушаков и его ученики</a></li>
     <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#">Переходная эпоха</a></li>
     <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#">Территорификация</a></li>
     <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#">Субъективность и воображение</a></li>
+  </ul>
+</div>
+</div>`,
+'cards-slider-en':`<div class="wrapper-cards">
+<a href="#" ><img  class="cards-arrow" src="./assets/arrow.svg" alt=""></a>
+<a href="#"><img class="cards-arrow cards-arrow-left" src="./assets/arrow.svg" alt=""></a>
+  
+<div class="cards">
+  <h2 class="cards-title">Хорография в Англии </h2>
+  <img
+        class="cards-img line-img"
+        src="./assets/slider-img.png"
+        alt=""
+      />
+  <div class="line"></div>
+  <p class="cards-description">
+    Самой распространенной формой хорографии в Англии была история графств, основной целью которой был рост национального и провинциального патриотизма. Почти все английские хорографы начала XVII в. были еще и антиквариями, описывающими графства в контексте их истории. «Прогулки по Кенту» Уильяма Ламбарда (1576) считаются первым в Англии примером описания графства. В работе «Древности Уорикшира» (1656) Уильям Дагдейл в качестве предшественников также упоминает: «Древности Кентербери» Уильяма Сомнера, «Описание Лестершира» Бертона и неизданный «Обзор Стаффордшира» С. Эрдвика. В предисловии, обращаясь к своим «благородным друзьям джентри Уорикшира», Дагдейл пишет: «Я предлагаю вам, мои благородные соотечественники, сей труд, из которого вы узнаете много нового о ваших достойных предках, в чью память словно монумент я сотворил сей труд, дабы продемонстрировать, какой чести они были достойны в те процветающие века. В этом мой труд мало чем отличается от упомянутых мной в предисловии, и мне бы хотелось, чтобы было больше похожих про остальные графства этой страны, учитывая, насколько хороши те, что уже были выполнены» (Dugdale W. The antiquities of Warwickshire illustrated: from records, leiger-books, manuscripts, charters, evidences, tombes, and armes: beautified with maps, prospects, and portraictures. London : Printed by Thomas Warren, 1656. P. a 3.) 
+  </p>
+  <h3 class="cards-title-list">По теме</h3>
+  <ul class="cards-list-description">
+    <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#">Россия: Сакральные пространства</a></li>
+  </ul>
+</div>
+</div>`,
+'cards-slider-rus':`<div class="wrapper-cards negative">
+<a href="#" ><img  class="cards-arrow" src="./assets/arrow.svg" alt=""></a>
+<a href="#"><img class="cards-arrow cards-arrow-left" src="./assets/arrow.svg" alt=""></a>
+  
+<div class="cards">
+  <h2 class="cards-title">Государевы изографы - Симон Ушаков и его ученики</h2>
+  <img
+        class="cards-img line-img"
+        src="./assets/slider-img-2.png"
+        alt=""
+      />
+  <div class="line"></div>
+  <p class="cards-description">
+  Симон Фёдорович Ушаков (1626-1686) - царский изограф (иконописец) и составитель чертежей. Самый ранний из известных документов, написанных Симеоном Ушаковым - челобитная к Алексею Михайловичу 1648 г. с просьбой зачислить жалованным, то есть получающим жалование, иконописцем в царские мастерские. Двадцатидвухлетний иконописец царским указом был зачислен знаменщиком в Серебрянную палату.Первое время занимался рисунками для вышивок Царицыной мастерской палаты. К первым известным работам Симона относится "Богоматерь Владимирская" (1651/52) и "Митрополит Филипп" (1653). Симон Ушаков обучил много изографов. Подпись иконы Успение 1663 г. гласит, что та написана Симоном Ушаковым совместно с учениками Егором, да Иваном. Имеются в виду происходящий из крепостных крестьян Григорий Зиновьев, ставший жалованным иконописцем в 1670 г. и, Иван Максимов, занимавшийся с Симоном в частном порядке и перешедшим на службу в Оружейную палату в 1678 г.Иконописец Симон Ушаков составлял карту Швеции, чертил планы местности в польском приходе в 1655 г., копировал чертеж реки Дон и пр. Иван Максимов (ум. 1688) составлял росписи и чертежи для Петра Бекетова, а также участвовал в оформлении «Книги об избрании на превысочайший престол великаго государя, царя и великаго князя Михаила Федоровича всея Великия России самодержца», содержащей фронтальные проекции Москвы. Б.П. Иванов приводит прошение иконописца Ивана Михайлова 1675 г.: «…А которыя, государь, моя братья иконописцы из городов из Ерославля и из Костромы и из Вологды и из Пскова и из иных многих городов бывают они на Москве у твоих великого государя иконных дел и тем иконописцам для святых икон воображения и иных твоих великого государя дел знаменных и чертежных дана им по твоему великого государя указу жалованная грамота» (Иванов Б.П. Русский картограф XVII века // Тр. геогр. фак. Харьк. гос. ун‑та им. А.М. Горького. Харьков, 1958. Т. 4).
+  </p>
+  <h3 class="cards-title-list">По теме</h3>
+  <ul class="cards-list-description">
+    <li class="cards-list-description-item"><a class="cards-list-description-item-link" href="#">Британия: Ранние травелоги и карты</a></li>
   </ul>
 </div>
 </div>`
