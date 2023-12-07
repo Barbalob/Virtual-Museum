@@ -67,14 +67,14 @@ export const routerList = {
     </div>
     <div class="main__sections"> 
       <ul class="sections-list">
-        <li class="sections-list-item"><button class="sections-button"><a href='#space-life-knowledge'>Пространство для жизни и знания</button></a></li>
-        <li class="sections-list-item"><button class="sections-button"><a href='#'>Имперская ботаника</button></a></li>
-        <li class="sections-list-item"><button class="sections-button"><a href='#'>Человек и государственная власть</button></a></li>
-        <li class="sections-list-item"><button class="sections-button"><a href='#'>Человек и церковь</button></a></li>
-        <li class="sections-list-item"><button class="sections-button"><a href='#'>Человек и империя</button></a></li>
-        <li class="sections-list-item"><button class="sections-button"><a href='#'>Человек-семья-социум </button></a></li>
-        <li class="sections-list-item"><button class="sections-button"><a href='#'>Человек, добродетель и искоренение пороков</button></a></li>
-        <li class="sections-list-item"><button class="sections-button"><a href='#'>Образование: от традиций к новациям</button></a></li>
+        <li class="sections-list-item"><a class="sections-link" href='#space-life-knowledge'>Пространство для жизни и знания</a></li>
+        <li class="sections-list-item"><a class="sections-link" href='#'>Имперская ботаника</a></li>
+        <li class="sections-list-item"><a class="sections-link" href='#'>Человек и государственная власть</a></li>
+        <li class="sections-list-item"><a class="sections-link" href='#'>Человек и церковь</a></li>
+        <li class="sections-list-item"><a class="sections-link" href='#'>Человек и империя</a></li>
+        <li class="sections-list-item"><a class="sections-link" href='#'>Человек-семья-социум</a></li>
+        <li class="sections-list-item"><a class="sections-link" href='#'>Человек, добродетель и искоренение пороков</a></li>
+        <li class="sections-list-item"><a class="sections-link" href='#'>Образование: от традиций к новациям</a></li>
       </ul>
     </div>
   </div>`,
@@ -174,7 +174,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, rem mollitia unde 
 
   <div class="selected-description">
     <a href='#section-screen-en'><img class="description-arrow" src="./assets/arrow.svg" alt=""></a>
-    <a disable> <img class="description-arrow description-arrow-left" src="./assets/arrow.svg" alt=""></a>
     <div class="selected-description-item">
       <figure class="item-emblem">
         <img
@@ -238,7 +237,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, rem mollitia unde 
 
 
   <div class="selected-description">
-    <a><img class="description-arrow" src="./assets/arrow.svg" alt=""></a>
     <a href='#section-screen-rus'><img class="description-arrow description-arrow-left" src="./assets/arrow.svg" alt=""></a>
     <div class="selected-description-item">
       <figure class="item-emblem">

@@ -1,25 +1,48 @@
 @import 'variables';
 @import 'mixin';
-.split-description-list{
+
+.split-description-list {
     @include defaultWidth;
     display: flex;
     gap: 20px;
-    &-item{
+
+    &-item {
 
         width: 50%;
         text-align: left;
         padding: 20px;
         text-align: center;
-        a{
-            color: #9A7E5F;
+
+        a {
+            position: relative;
+            color: $colorBackgroundEmblem;
             text-align: center;
             font-family: Inter;
             font-size: 28px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+            
+
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $colorBackgroundEmblem;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: width 0.3s;
+            }
+            &:hover::after{
+                width: 100%;
+            }
         }
-        p{
+
+        p {
             text-align: left;
             color: #FDF8F0;
             font-family: Inter;
@@ -34,29 +57,32 @@
 
 //HD
 @media (min-width: 992px) and (max-width: 1499px) {
-    .split-description-list{
+    .split-description-list {
         @include defaultWidth($maxWidthHD);
     }
 }
 
 //Portrait tablets and small desktops 
 @media (min-width: 768px) and (max-width: 991px) {
-    .split-description-list{
+    .split-description-list {
         @include defaultWidth($maxWidthHD);
     }
 }
 
 @media (max-width: 767px) {
-    .split-description-list{
+    .split-description-list {
         width: 100vw;
         gap: 10px;
         padding-bottom: 10px;
-        &-item{
+
+        &-item {
             padding: 0 20px;
-            a{
+
+            a {
                 font-size: 22px;
             }
-            p{
+
+            p {
                 font-size: 14px;
                 line-height: 16px;
             }
