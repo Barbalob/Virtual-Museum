@@ -9,6 +9,7 @@ const TerserWebpackPlugin = require("terser-webpack-plugin")
 
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
+const ASSET_PATH = process.env.ASSET_PATH || '/';
 
 // const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
 const filename = ext => isDev ? `[name].${ext}` : `[name].${ext}`
@@ -26,16 +27,25 @@ const optimization = () => {
         config.minimizer = [
             // new TerserWebpackPlugin(),
             `...`,
-            new CssMinimizerPlugin()            
+            new CssMinimizerPlugin()
         ]
     }
-    return config                  
+    return config
 }
 
 const cssLoaders = extra => {
     const loaders = [
         MiniCssExtractPlugin.loader,
-        'css-loader'
+        {
+            loader:'css-loader',
+            options: {
+                modules: {
+                    // localIdentName: "[name]__[local]--[hash:base64:5]",
+                    localIdentName: "[local]",
+                },
+            },
+        }
+
     ]
 
     if (extra) {
@@ -46,14 +56,18 @@ const cssLoaders = extra => {
 }
 
 module.exports = {
-    entry: {main:'./src/main.js'},
+    entry: {main:'./src/main.jsx'},
     output:{
         filename: filename('js'),
-        path: path.resolve(__dirname,"build"),
+        // filename: 'bundle.js',
+        path: path.resolve(__dirname,"build/"),
+    },
+    resolve: {
+        extensions: ['.js', '.jsx', '.ts', '...'],
     },
     optimization : optimization(),
-    // devtool: isDev ? 'source-map' : '',
-    optimization: optimization(),
+    // devtool: isDev ? 'source-map' : 'eval',
+    // optimization: optimization(),
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
@@ -63,33 +77,36 @@ module.exports = {
         }),
         new CopyPlugin({
             patterns: [{
-                from : path.resolve(__dirname, 'src/assets') , 
-                to: path.resolve(__dirname, 'build/assets')}] //[{ from : "public"}]
+                from : path.resolve(__dirname, 'src/assets') ,
+                to: path.resolve(__dirname, 'build/assets')}]
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({filename:filename('css')})
-    ],  
+    ],
     devServer: {
-        static: {
-            directory: path.join(__dirname, 'src'),
-        },
+        // static: {
+        //     directory: path.join(__dirname, 'src'),
+        // },
+        static: path.resolve(__dirname, 'src'),
         compress: true,
         port: 8080,
         open: true,
+        // historyApiFallback: true,
     },
     module:{
         rules:[
             {
                 test: /\.css$/,
-                use: cssLoaders()
+                use: cssLoaders(),
             },
             {
                 test: /\.less$/,
-                use: cssLoaders('less-loader')
+                use: cssLoaders('less-loader'),
             },
             {
                 test: /\.s[ac]ss$/,
-                use: cssLoaders('sass-loader')
+                use: cssLoaders('sass-loader'),
+
             },
             {
                 test: /\.m?js$/,
@@ -98,6 +115,32 @@ module.exports = {
                   loader: 'babel-loader',
                   options: {
                     presets: ['@babel/preset-env']
+                  }
+                }
+            },
+            {
+                test: /\.m?ts$/,
+                exclude: /node_modules/,
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: [
+                        '@babel/preset-env',
+                        '@babel/preset-typescript'
+                    ]
+                  }
+                }
+            },
+            {
+                test: /\.m?jsx$/,
+                exclude: /node_modules/,
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: [
+                        '@babel/preset-env',
+                        '@babel/preset-react'
+                    ]
                   }
                 }
             },
