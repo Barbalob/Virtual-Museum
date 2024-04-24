@@ -21,7 +21,7 @@ const Page2 = ({data}) => {
             "background": mainColor,
             }
         }> 
-            {/* <Header /> */}
+            <Header />
             <MainTitle />
             <TitleCard title={subCard.title} page='Page2'/>
             <CardImage 
