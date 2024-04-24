@@ -1,0 +1,150 @@
+.main__sections {
+    max-width: 1412px;
+    background: url('../../assets/image5.png'), url('../../assets/image6.png');
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: auto 100%, auto 100.5%;
+    margin: 0 auto;
+
+    .sections-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        gap: 44px;
+
+        &-item {
+            width: 617px;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                bottom: -22px;
+                left: 10%;
+                width: 500px;
+                border-bottom: 5px solid rgba(220, 206, 191, 1);
+                border-radius: 10px;
+                content: "";
+            }
+        }
+
+        &-item:nth-last-child(1) {
+            &:before {
+                width: 0px;
+                content: "";
+            }
+        }
+
+
+        .sections-link {
+            display: flex;
+            justify-content: center;
+            color: rgba(0, 0, 0, 1);
+            padding: 30px 40px;
+            text-align: center;
+            align-items: center;
+        
+            font-family: Roboto Slab;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 617px;
+            height: 137px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 1);
+
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+            transition: all 300ms ease-in-out;
+        }
+
+        .sections-link:hover {
+            // color: rgba(154, 126, 95, 1);  
+            box-shadow: 0 0 100px 2em rgba(220, 206, 191, 1) inset;
+            background: rgba(220, 206, 191, 1);
+        }
+    }
+}
+
+//
+@media (max-width: 991px) {
+    .main__sections {
+        .sections-list {
+            padding: 40px;
+            gap: 22px;
+
+            &-item {
+                width: 417px;
+                position: relative;
+
+                &:before {
+                    bottom: -11px;
+                    left: 11%;
+                    width: 320px;
+                    border-bottom: 3px solid #BFA181;
+                }
+            }
+
+            .sections-link {
+                padding: 5px 20px;
+                font-size: 24px;
+                width: 417px;
+                height: 115px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main__sections {
+        .sections-list {
+            padding: 20px;
+            gap: 20px;
+
+            &-item {
+                width: 330px;
+                position: relative;
+
+                &:before {
+                    bottom: -10px;
+                    width: 260px;
+                    border-bottom: 3px solid #BFA181;
+                }
+            }
+
+            .sections-link {
+                padding: 5px 10px;
+                font-size: 16px;
+                width: 330px;
+                height: 80px;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .main__sections {
+        .sections-list {
+            padding: 20px;
+            gap: 14px;
+
+            &-item {
+                width: 230px;
+                position: relative;
+
+                &:before {
+                    bottom: -7px;
+                    width: 175px;
+                    border-bottom: 2px solid #BFA181;
+                }
+            }
+
+            .sections-link {
+                padding: 5px 10px;
+                font-size: 14px;
+                width: 230px;
+                height: 60px;
+            }
+        }
+    }
+}

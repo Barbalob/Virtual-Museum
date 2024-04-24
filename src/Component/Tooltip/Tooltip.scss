@@ -1,0 +1,36 @@
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; top: 0; /* Положение подсказки */
+
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29.01px;
+    text-align: justified;
+    width: 300px; /* Ширина подсказки */
+    
+    background: #fff; /* Синий цвет фона */
+    border-radius: 10px;
+    // color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 0.5s; /* Время появления подсказки */
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+}
+
+
+.tooltip{
+    margin: 0 9px;
+    &-img{
+        // vertical-align: middle;
+    }
+}

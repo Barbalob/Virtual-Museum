@@ -1,0 +1,25 @@
+.bibliography-list{
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+    margin-top: 72px;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 90px;
+    position: relative;
+    width: 961px;
+    &-item{
+        display: flex;
+        align-items:center;
+        width: 961px;
+        gap: 12px;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 38px;
+        text-align: left;
+
+        &::before {
+            content: url('../../assets/crown.svg');
+        }
+    }
+}

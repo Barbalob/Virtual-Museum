@@ -1,0 +1,23 @@
+.card-description{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.card-description-wrapper{
+    margin: 0 auto;
+    width: 1160px;
+    position: relative;
+    border-radius: 10px;
+    &-text{
+        padding: 32px 100px;
+        text-indent: 30px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 38px;
+        text-align: left;
+
+    }
+}

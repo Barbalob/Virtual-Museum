@@ -1,0 +1,18 @@
+.card-image{
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    // margin-bottom: 32px;
+    img{
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    .card-image-text{
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.1px;
+        text-align: center;
+
+    }
+}

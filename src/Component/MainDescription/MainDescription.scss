@@ -1,0 +1,31 @@
+.main-description{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    .decor{
+        width: 300px;
+        height: 30px;
+    }
+    &-title{
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding-top: 40px;
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 52.75px;
+        text-align: center;
+    }
+    &-text{
+        padding: 0 137px;
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 38px;
+        text-align: justified;
+        
+    }
+}

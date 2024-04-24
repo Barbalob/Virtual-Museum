@@ -1,0 +1,132 @@
+.ticket{
+    position: relative;
+    width: 1160px;
+    height: 565px;
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+    border-radius:10px;
+    align-items: center;
+    padding: 18px 20px;
+    margin-bottom: 40px;
+    background-image: url(../../assets/ticket-decor.png);
+    &::before{
+        content: '';
+        position: absolute;
+        top:53px;
+        left: 33px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100px;
+        z-index: 101;
+        background: rgba(191, 161, 129, 1);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom:15px;
+        left: 139px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        z-index: 101;
+        background: rgba(191, 161, 129, 1);
+    }
+}
+
+.ticket-figcaption{
+    position: relative;
+
+    &-text{
+        background: rgba(255, 255, 255, 0.64);
+        
+        position: absolute;
+        bottom: 16px;
+        right: 22px;
+        width: 456px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 23.74px;
+        // text-align: justified;
+        padding: 8px 16px;
+        border-radius: 10px;
+
+    }
+
+    &-img{
+        border-radius:10px;
+        
+    }
+    
+    &::before{
+        content: '';
+        position: absolute;
+        bottom:149px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100px;
+        z-index: 100;
+        background: rgba(191, 161, 129, 1);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top:-10px;
+        right: 58px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        z-index: 100;
+        background: rgba(191, 161, 129, 1);
+    }
+}
+
+.ticket-decore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    .ticket-decore-date{
+        font-family: "Roboto", sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 42.19px;
+        text-align: center;
+        color: rgba(116, 110, 73, 1);
+
+
+    }
+    .ticket-line{
+        width: 2px;
+        height: 410px;
+        background:rgba(116, 110, 73, 1);
+
+    }
+    .ticket-decore-year{
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23.44px;
+        text-align: center;
+        color: rgba(116, 110, 73, 1);
+
+    }
+}
+.ticket-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.65px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgba(116, 110, 73, 1);
+    -webkit-transform: rotate(-90deg); /* Для Safari */
+    -ms-transform: rotate(-90deg);     /* Для IE 9 */
+    transform: rotate(-90deg);         /* Для прочих браузеров */
+    // white-space: nowrap;
+}
+
+.ticket-barcode{
+    position: relative;
+    left: -150px;
+}

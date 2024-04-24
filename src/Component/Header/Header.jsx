@@ -1,22 +1,42 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import './Header.scss'
+import {listLink} from '../../data/Link/Link.js'
 
 const Header = (props) => {
   return (
-    <div className="main__header line-header">
-      <input id="menu-toggle" type="checkbox"/>
-      <label className='menu-button-container' htmlFor="menu-toggle">
-        <div className='menu-button'></div>
-      </label>
-      <nav className="header__nav">
-        <ul className="nav-list">
-          {props.listLink.map((el, index) =>
-              (<li key={index} className="nav-list-item"><Link to={el.href}>{el.text}</Link></li>)
-          )}
-        </ul>
-      </nav>
-    </div>
+    <div className='header'>
+      <div className="logo">
+        <img src="../.././assets/RussianScienceFoundation.png" alt="" className="logo-img" />
+        <p className="logo-p">Сайт разработан при поддержке<br/> Российского научного фонда - РНФ</p>
+      </div>
+        <nav className='nav'>
+          <ul className="nav-list">
+            <li className="nav-list-item">
+              <button className='nav-list-item-btn'>Разделы</button>
+              <ul className='dropdown-list'>
+                {listLink.map(link=>{
+                  return  <NavLink key={link.text} className='dropdown-list-item' to={link.href}>{link.text}</NavLink>
+                })}
+              </ul>
+            </li>
+            <li className="nav-list-item">
+              
+              <button className='nav-list-item-btn'>Библиография</button>
+              <ul className='dropdown-list'>
+                <NavLink className='dropdown-list-item' to='/bibliography/ru'>Библиография Россия</NavLink>
+                <NavLink className='dropdown-list-item' to='/bibliography/gb'>Библиография Британия</NavLink>
+              </ul>
+            </li>
+            <li className="nav-list-item"><NavLink to='/'>Об авторах</NavLink></li>
+            
+          </ul>
+        </nav>
+
+</div>
   );
 };
+
+ 
 
 export default Header;

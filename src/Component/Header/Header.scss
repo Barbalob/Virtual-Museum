@@ -1,0 +1,112 @@
+.header{
+    display: flex;
+    align-items: center;
+    max-width: 1440px; 
+    margin: 0 auto;
+    padding: 40px 32px 24px 32px;
+    z-index: 103;
+}
+
+.logo{
+    display: flex;
+    gap: 11px;
+    flex-direction: column;
+    img.logo-img{
+        // width: 219px;
+        // height: 32px;
+    }
+    p.logo-p{
+        font-family: "Manrope", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.12px;
+        text-align: left;
+
+    }
+}
+
+.nav{
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 103;
+    .nav-list{
+        display: flex;
+        gap:135px;
+        padding: 12px 32px 12px 56px;
+        border: 0.5px solid rgba(0, 0, 0, 1);
+        border-radius: 10px;
+        &-item{
+            position: relative;
+            // display: inline-block;
+            font-family: "Manrope", sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 30.05px;
+            text-align: left;
+            color: rgba(11, 7, 1, 1);
+            button{
+                position: relative;
+                font-family: "Manrope", sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 30.05px;
+                text-align: left;
+                background-color:inherit;
+                color: rgba(11, 7, 1, 1);
+            }
+            a{
+                font-family: "Manrope", sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 30.05px;
+                text-align: left;
+                background-color:inherit;
+                color: rgba(11, 7, 1, 1);
+            }
+            &::before {
+                content: url('../../assets/crown.svg');
+                position: absolute;
+                z-index: 103;
+                left: -20px;
+                top: 1px;
+            }
+        }
+    }
+}
+
+.nav-list-item:hover .dropdown-list {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: rgba(255, 255, 255, 1);
+    min-width: 500px;
+    padding: 12px;
+    border-radius:10px;
+    box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.12), 4px 4px 4px 0px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+    &-item{
+        display: flex;
+        position: relative;
+        z-index: 102;
+        // align-items:center;
+        gap: 6px;
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.86px;
+        text-align: left;
+        color:rgba(11, 7, 1, 1);
+        
+        &::before {
+            content: url('../../assets/crown.svg');
+            z-index: 103;
+        }
+    }
+}
