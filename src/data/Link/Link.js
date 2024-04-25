@@ -1,5 +1,5 @@
 export const listLink = [
-    {href:'/space-life-knowledge',text:'Освоение пространства: границы и репрезентации'},
+    {href:'/borders-and-representations',text:'Освоение пространства: границы и репрезентации'},
     {href:'/test',text:'Подчинение природы: научная систематика как властный дискурс'},
     {href:'/space-life-knowledge',text:'Рождение государства: «Левиафан» и регулярное государство'},
     {href:'/test-of-faith',text:'Испытание верой: власть светская и власть духовная'},
