@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 const Footer = () => {
     const location = useLocation();
     const headPath = location.pathname.split('/');
-    let typeGB = headPath.includes('gb')
+    let typeGB = 'gb'
 
     const srcDict = {
         srcLogo: typeGB ? 'RussianScienceFoundationWhite.png': 'RussianScienceFoundation.png',

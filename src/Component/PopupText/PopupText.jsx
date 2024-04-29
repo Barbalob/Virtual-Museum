@@ -5,8 +5,8 @@ import './PopupText.scss'
 const PopupText = ({mainDescription}) => {
     const [show, setShow] = useState(false)
     const { ref, inView, entry } = useInView({
-        threshold: 0.7,
-        delay :1000,
+        threshold: 0.3,
+        delay :100,
         triggerOnce: true
       });
     

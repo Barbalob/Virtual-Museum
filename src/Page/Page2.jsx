@@ -5,8 +5,11 @@ import TitleCard from '../Component/TitleCard/TitleCard';
 import CardImage from '../Component/CardImage/CardImage';
 import CardDescription2 from '../Component/CardDescription2/CardDescription2';
 import Article from '../Component/Article/Article';
+import SubTitle from '../Component/SubTitle/SubTitle';
+import NavArticle from '../Component/NavArticle/NavArticle';
 import { useParams } from 'react-router-dom';
 import Footer from '../Component/Footer/Footer';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 const Page2 = ({data}) => {
     const params = useParams()
@@ -24,10 +27,19 @@ const Page2 = ({data}) => {
             <Header />
             <MainTitle />
             <TitleCard title={subCard.title} page='Page2'/>
-            <CardImage 
-                arrayImg={subCard.arrayImg} 
-            />
             <CardDescription2 type={type} description={subCard.description}/>
+            <NavArticle arrayArticles={subCard.arrayArticles} />
+            {subCard.arrayArticles.map((el, index) => {
+                return (
+                    <Element key={index} name={el.title}>
+                        <SubTitle title={el.title} />
+                        <CardImage 
+                            arrayImg={el.arrayImg} 
+                        />
+                        <CardDescription2 type={type} description={subCard.description}/>
+                    </Element>
+                )
+            })}
             <Article  params={params} data={data}/>
             <Footer />
         </div>

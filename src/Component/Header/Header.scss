@@ -7,12 +7,16 @@
     z-index: 103;
 }
 
+.checkbox {
+    display: none;
+}
+
 .logo{
     display: flex;
     gap: 11px;
     flex-direction: column;
     img.logo-img{
-        // width: 219px;
+        width: 219px;
         // height: 32px;
     }
     p.logo-p{
@@ -109,4 +113,266 @@
             z-index: 103;
         }
     }
+}
+
+
+
+//HD
+@media (min-width: 992px) and (max-width: 1499px) {
+    .header{
+        max-width: 1000px; 
+        padding: 30px 32px 24px 32px;
+    }
+    .logo{
+
+        img.logo-img{
+            width: 200px;
+        }
+        p.logo-p{
+            font-family: "Manrope", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 19.12px;
+            text-align: left;
+    
+        }
+    }
+    .nav{
+        .nav-list{
+            display: flex;
+            gap:60px;
+            padding: 10px 15px 10px 36px;
+            &-item{
+                button{
+                    font-size: 18px;
+                }
+                a{
+                    font-size: 18px;
+                    line-height: 25.05px;
+                }
+            }
+        }
+    }
+}
+
+//Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {
+    .header{
+        max-width: 768px; 
+        padding: 30px 32px 24px 32px;
+    }
+    .logo{
+
+        img.logo-img{
+            width: 150px;
+        }
+        p.logo-p{
+            font-family: "Manrope", sans-serif;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 14.12px;
+            text-align: left;
+    
+        }
+    }
+    .nav{
+        left: 55%; 
+        .nav-list{
+            display: flex;
+            gap:30px;
+            padding: 10px 15px 10px 36px;
+            &-item{
+                white-space: nowrap;
+                button{
+                    font-size: 18px;
+                }
+                a{
+                    font-size: 18px;
+                    line-height: 25.05px;
+                }
+            }
+        }
+    }
+}
+
+
+//Mobile
+@media (max-width: 767px){
+    .header{
+        display: flex;
+        position: relative;
+        // justify-content: space-between;
+        max-width: 100vw; 
+        padding: 10px;
+        box-shadow: 0px 1px 1px black
+
+    }
+    
+    .logo{
+        gap: 5px;
+        img.logo-img{
+            width: 100px;
+        }
+        p.logo-p{
+            font-family: "Manrope", sans-serif;
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 10.12px;
+            text-align: left;
+    
+        }
+    }
+
+    .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 36px;
+        top: 17px;
+        right: 19px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+
+    .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #0e2431;
+      }
+      
+      .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+      }
+      
+      input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+      
+      input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+
+      input[type="checkbox"]:checked ~ .header.logo{
+        display: none;
+      }
+
+      input[type="checkbox"]:checked ~ .nav{
+        display: flex;
+      }
+      
+
+      .nav{
+        position: absolute; 
+        top: 66px;
+        display: none;
+        .nav-list{
+            display: flex;
+            background-color:#fff;
+            width: 100vw;
+            height: 200vh;
+            flex-direction: column;
+            gap:10px;
+            padding: 12px 32px 12px 56px;
+            border: 0.5px solid rgba(0, 0, 0, 1);
+            border-radius: 0px;
+            &-item{
+                button{
+                    position: relative;
+                    font-family: "Manrope", sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30.05px;
+                    text-align: left;
+                    background-color:inherit;
+                    color: rgba(11, 7, 1, 1);
+                }
+                a{
+                    font-family: "Manrope", sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21.05px;
+                    text-align: left;
+                    background-color:inherit;
+                    color: rgba(11, 7, 1, 1);
+                }
+                &::before {
+                    content: url('../../assets/crown.svg');
+                    position: absolute;
+                    z-index: 103;
+                    left: -20px;
+                    top: 1px;
+                }
+            }
+        }
+    }
+
+    .nav-list-item:hover .dropdown-list {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
+    
+    .dropdown-list {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: -30px;
+        background: rgba(255, 255, 255, 1);
+        min-width: 300px;
+        padding: 12px;
+        border-radius:10px;
+        box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.12), 4px 4px 4px 0px rgba(0, 0, 0, 0.12);
+        z-index: 1000;
+        &-item{
+            display: flex;
+            position: relative;
+            z-index: 102;
+            // align-items:center;
+            gap: 6px;
+            font-family: "Manrope", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21.86px;
+            text-align: left;
+            color:rgba(11, 7, 1, 1);
+            
+            &::before {
+                content: url('../../assets/crown.svg');
+                z-index: 103;
+            }
+        }
+    }
+      
+
 }

@@ -19,7 +19,87 @@
         font-size: 24px;
         font-weight: 400;
         line-height: 38px;
-        text-align: left;
+        text-align: justify;
 
+    }
+}
+
+//HD
+@media (min-width: 992px) and (max-width: 1499px) {
+    .card2-description{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .card2-description-wrapper{
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12) inset;
+        border-radius: 10px;
+        margin: 0 auto;
+        width: 900px;
+        &-text{
+            padding: 32px 80px;
+            text-indent: 30px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 38px;
+        }
+    }
+}
+
+//Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {
+    .card2-description{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .card2-description-wrapper{
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12) inset;
+        border-radius: 10px;
+        margin: 0 auto;
+        width: 750px;
+        &-text{
+            padding: 32px 50px;
+            text-indent: 30px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 38px;
+    
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767px){
+    .card2-description{
+        display: flex;
+        width: 100vw;
+        padding: 0px 20px;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    
+    .card2-description-wrapper{
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12) inset;
+        border-radius: 10px;
+        margin: 0 auto;
+        width: 100%;
+        &-text{
+            max-height: 400px;
+            overflow: auto;
+            padding: 20px;
+            text-indent: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+        }
     }
 }

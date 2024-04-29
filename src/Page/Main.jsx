@@ -12,8 +12,6 @@ const Main = () => {
         <div>
             <Header />
             <MainImage />
-            {/* <MainTitle />
-            <MainEmblem type='main'/> */}
             <MainDescription />
             <MainButtonChoise listLink={listLink} />
         </div>

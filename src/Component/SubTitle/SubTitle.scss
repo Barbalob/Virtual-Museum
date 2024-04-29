@@ -1,0 +1,47 @@
+.sub-title{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    h2{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 48px;
+        text-align: center;
+    }
+}
+
+//HD
+@media (min-width: 992px) and (max-width: 1499px) {
+    .sub-title{
+        max-width: 900px;
+        margin-bottom: 20px;
+        h2{
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+}
+
+//Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {
+    .sub-title{
+        max-width: 750px;
+        margin-bottom: 15px;
+        h2{
+            font-size: 18px;
+            line-height: 36px;
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767px){
+    .sub-title{
+        max-width: 80vw;
+        margin-bottom: 15px;
+        h2{
+            font-size: 18px;
+            line-height: 36px;
+        }
+    }
+}
