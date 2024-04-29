@@ -17,7 +17,6 @@ const Page2 = ({data}) => {
     const card = data.listSections[type][id]
     const subCard = card.sectionArticles[subid]
     const a = !!(subCard.arrayArticles)
-    console.log(a);
     const mainColor = type==='ru'? 'rgba(255, 255, 255, 1)' : 'rgba(220, 206, 191, 1)'
     return ( 
         <div className='wrapper' style={{

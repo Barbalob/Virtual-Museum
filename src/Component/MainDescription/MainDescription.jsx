@@ -3,6 +3,7 @@ import './MainDescription.scss'
 import srcDecor from '../../assets/gold.svg'
 
 const MainDescription = () => {
+    // console.log(process.env.PUBLIC_URL);
     return (
         <div className='main-description'>
             <h2 className='main-description-title'>Добро пожаловать<br/> в музей</h2>

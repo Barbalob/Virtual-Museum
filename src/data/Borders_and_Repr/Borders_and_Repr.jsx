@@ -1,5 +1,6 @@
 import React from 'react';
 import Tooltip from '../../Component/Tooltip/Tooltip';
+import srcImage from '../../assets/CardImage/image15.png'
 
 export const Borders_and_Repr = {
     // href:"test-of-faith",
@@ -274,7 +275,7 @@ export const Borders_and_Repr = {
                         title:'Хорография и картография Англии',
                         arrayImg:[
                             {
-                                srcImg:'image15.png',
+                                srcImg:srcImage,
                                 descriptionImg:'1',
                             },
                             {

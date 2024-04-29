@@ -6,9 +6,9 @@ const NavArticle = ({arrayArticles}) => {
     return (
         <div className='nav-articles'>
             <ul className='nav-articles-list'>
-                {arrayArticles.map(el => {
+                {arrayArticles.map((el, index) => {
                     return (
-                        <li className="nav-articles-list-items">
+                        <li key={index} className="nav-articles-list-items">
                             <Link  to={el.title}  smooth={true} >{el.title}</Link>
                         </li>
                     )
