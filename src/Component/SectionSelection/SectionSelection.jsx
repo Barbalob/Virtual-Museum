@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './SectionSelection.scss'
 import {NavLink} from "react-router-dom";
-
+import srcGold from "../../assets/gold.svg"
+import Crown2 from "../../assets/Crown2.svg"
 
 const SectionSelection = ({data, head}) => {
     const [error, setError] = useState(data.listSections.ru.length !== data.listSections.gb.length)
@@ -19,7 +20,7 @@ const SectionSelection = ({data, head}) => {
                         <div className='wrapper-link wrapper-link-left'>
                             <p>Россия</p>
                         </div>
-                        <img src="../../assets/gold.svg" alt="" />
+                        <img src={srcGold} alt="" />
                         <div className='wrapper-link'>
                             <p>Британия</p>
                         </div>
@@ -32,7 +33,7 @@ const SectionSelection = ({data, head}) => {
                                 </div>
                                 <div className='center-decore'>
                                     <div className='vert-line'></div>
-                                    <img src="../../assets/Crown2.svg" alt="" />
+                                    <img src={Crown2} alt="" />
                                     <div className='vert-line'></div>
                                 </div>
                                 <div className='wrapper-link'>

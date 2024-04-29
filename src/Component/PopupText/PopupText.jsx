@@ -18,7 +18,7 @@ const PopupText = ({mainDescription}) => {
                             <li key={index} className="popup-description-list-item">
                                 <div className="popup-description-list-item-wrapper">
                                     <p className={`popup-description-list-item-wrapper-text ${inView ? 'showText':''}`}>{item.decsription}</p>
-                                    <img src={`../../assets/PopupImg/${item.srcImg}`} alt="" className="popup-description-list-item-wrapper-img" />
+                                    <img src={`${item.srcImg}`} alt="" className="popup-description-list-item-wrapper-img" />
                                 </div>
                             </li>
                         )

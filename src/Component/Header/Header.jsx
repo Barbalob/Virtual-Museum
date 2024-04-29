@@ -2,12 +2,14 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 import './Header.scss'
 import {listLink} from '../../data/Link/Link.js'
+import srcRussianScienceFoundation from "../../assets/RussianScienceFoundation.png"
+
 
 const Header = (props) => {
   return (
     <div className='header'>
         <div className="logo">
-          <img src="../.././assets/RussianScienceFoundation.png" alt="" className="logo-img" />
+          <img src={srcRussianScienceFoundation} alt="" className="logo-img" />
           <p className="logo-p">Сайт разработан при поддержке<br/> Российского научного фонда - РНФ</p>
         </div>
         

@@ -1,6 +1,8 @@
 import React from 'react';
 import './BibliographyList.scss'
 import {NavLink, useLocation} from "react-router-dom";
+import srcGold from "../../assets/gold.svg"
+import srcArrow from "../../assets/arrow.svg"
 
 
 const BibliographyList = ({BibliographyList}) => {
@@ -9,15 +11,15 @@ const BibliographyList = ({BibliographyList}) => {
     return (
         <>
             <ul className='bibliography-list'>
-                <NavLink to={`/${headPath[1]}/${headPath[2]=='ru' ? 'gb': 'ru'}`}><img style={{'position':"absolute", "top": "50%", 'left': '-150px'}} src="../../assets/arrow.svg" alt="" /></NavLink>
+                <NavLink to={`/${headPath[1]}/${headPath[2]=='ru' ? 'gb': 'ru'}`}><img style={{'position':"absolute", "top": "50%", 'left': '-150px'}} src={srcArrow} alt="" /></NavLink>
                 
                 {BibliographyList.map((item, index)=>{
                     return <li key={index} className='bibliography-list-item'>{item}</li>
                 })}
 
-                <NavLink to={`/${headPath[1]}/${headPath[2]=='ru' ? 'gb': 'ru'}`}><img style={{'position':"absolute","top": "50%", 'right': '-150px',  "transform":'rotate(180deg)'}} src="../../assets/arrow.svg" alt="" /></NavLink>
+                <NavLink to={`/${headPath[1]}/${headPath[2]=='ru' ? 'gb': 'ru'}`}><img style={{'position':"absolute","top": "50%", 'right': '-150px',  "transform":'rotate(180deg)'}} src={srcArrow} alt="" /></NavLink>
             </ul>
-            <img src="../../assets/gold.svg" style={{"display": "block", "margin":'0 auto', 'paddingBottom':'30px'}} alt="" className="decor"/>
+            <img src={srcGold} style={{"display": "block", "margin":'0 auto', 'paddingBottom':'30px'}} alt="" className="decor"/>
         </>
     );
 };

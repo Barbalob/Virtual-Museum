@@ -1,14 +1,18 @@
 import React from 'react';
 import './Ticket.scss'
+import srcTicketDecor from "../../assets/ticket-decor.png"
+import srcTicketDecor2 from "../../assets/ticket-decor2.png"
+
+
 const Ticket = ({type, description, srcImg}) => {
     console.log(type);
     const mainColor = type==='ru'?  'rgba(220, 206, 191, 1)' : 'rgba(255, 255, 255, 1)' 
-    const bg = type==='ru' ? 'url(../../assets/ticket-decor.png)':'url(../../assets/ticket-decor2.png)'
+    const bg = type==='ru' ? `url(${srcTicketDecor})`:`url(${srcTicketDecor2})`
     console.log(bg);
     return (
         <div className='ticket' style={{'backgroundImage': bg,"backgroundColor": mainColor  }}>
             <figcaption className='ticket-figcaption'>
-                <img className='ticket-figcaption-img' src={"../../assets/ticketImg/" + srcImg} alt="" /> 
+                <img className='ticket-figcaption-img' src={srcImg} alt="" /> 
                 <figure className='ticket-figcaption-text'>{description}</figure>
             </figcaption>
             <div className='ticket-decore'>

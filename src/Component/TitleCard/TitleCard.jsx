@@ -2,6 +2,7 @@ import React from 'react';
 import './TitleCard.scss'
 import {NavLink} from "react-router-dom";
 import { useLocation } from 'react-router-dom';
+import srcArrowRightUp from "../../assets/arrow-right-up.svg"
 
 const TitleCard = ({title, page}) => {
     const location = useLocation();
@@ -22,7 +23,7 @@ const TitleCard = ({title, page}) => {
     return (
         <div className='card-title'>
             <h2 className='card-title-h2'>{title}</h2>
-            <NavLink to={`${href}`} className='card-title-btn'><img src="../../assets/arrow-right-up.svg" alt="arrow" /></NavLink>
+            <NavLink to={`${href}`} className='card-title-btn'><img src={srcArrowRightUp} alt="arrow" /></NavLink>
         </div>
     );
 };

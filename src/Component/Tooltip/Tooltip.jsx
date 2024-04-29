@@ -1,13 +1,15 @@
 import React from 'react';
 import './Tooltip.scss'
 import { NavLink } from 'react-router-dom';
+import srcInformation from "../../assets/information.svg"
+
 
 const Tooltip = ({dataTooltip, text, src, name}) => {
     return (
         <> 
             <span className='tooltip-text'>{text}</span>
             <div className='tooltip'>
-                <img  className='tooltip-img' src="../../assets/information.svg" alt="" />
+                <img  className='tooltip-img' src={srcInformation} alt="" />
                 <ul className='tooltip-list'>
                     {/* <div className='tooltip-list-wrapper'>
                         <p>{dataTooltip}</p>
@@ -19,7 +21,7 @@ const Tooltip = ({dataTooltip, text, src, name}) => {
             </div>  
             {/* <span className='tooltip-text'>{text}</span>  
             <span className='tooltip' data-tooltip={dataTooltip}>
-                <img  className='tooltip-img' src="../../assets/information.svg" alt="" />
+                <img  className='tooltip-img' src={srcInformation} alt="" />
             </span>  */}
         </>
     );
