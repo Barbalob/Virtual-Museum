@@ -2,7 +2,7 @@ import React from 'react';
 import './Tooltip.scss'
 import { NavLink } from 'react-router-dom';
 
-const Tooltip = ({dataTooltip, text, src}) => {
+const Tooltip = ({dataTooltip, text, src, name}) => {
     return (
         <> 
             <span className='tooltip-text'>{text}</span>
@@ -13,8 +13,8 @@ const Tooltip = ({dataTooltip, text, src}) => {
                         <p>{dataTooltip}</p>
                         {src ? <NavLink to={src}>ПОДРОБНЕЕ</NavLink>:""}
                     </div> */}
-                    <p>{dataTooltip}</p>
-                    {src ? <NavLink to={src}>ПОДРОБНЕЕ</NavLink>:""}
+                    <p><span style={{color:'red'}}>{name} </span> - {dataTooltip}</p>
+                    {src ? <NavLink to={`/${src}`}>ПОДРОБНЕЕ</NavLink>:""}
                 </ul>
             </div>  
             {/* <span className='tooltip-text'>{text}</span>  

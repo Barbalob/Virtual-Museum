@@ -16,7 +16,8 @@ const Page2 = ({data}) => {
     const {type, id, subid} = params
     const card = data.listSections[type][id]
     const subCard = card.sectionArticles[subid]
-    console.log(subCard);
+    const a = !!(subCard.arrayArticles)
+    console.log(a);
     const mainColor = type==='ru'? 'rgba(255, 255, 255, 1)' : 'rgba(220, 206, 191, 1)'
     return ( 
         <div className='wrapper' style={{
@@ -27,9 +28,12 @@ const Page2 = ({data}) => {
             <Header />
             <MainTitle />
             <TitleCard title={subCard.title} page='Page2'/>
+            <CardImage 
+                            arrayImg={subCard.arrayImg} 
+                        />
             <CardDescription2 type={type} description={subCard.description}/>
-            <NavArticle arrayArticles={subCard.arrayArticles} />
-            {subCard.arrayArticles.map((el, index) => {
+            {!!(subCard.arrayArticles) ? <NavArticle arrayArticles={subCard.arrayArticles} />: ''}
+            {!!(subCard.arrayArticles) ? subCard.arrayArticles.map((el, index) => {
                 return (
                     <Element key={index} name={el.title}>
                         <SubTitle title={el.title} />
@@ -39,7 +43,8 @@ const Page2 = ({data}) => {
                         <CardDescription2 type={type} description={subCard.description}/>
                     </Element>
                 )
-            })}
+            }) : ''}
+           
             <Article  params={params} data={data}/>
             <Footer />
         </div>

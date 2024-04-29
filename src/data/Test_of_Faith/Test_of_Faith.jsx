@@ -95,7 +95,7 @@ export const Test_of_Faith = {
                             },
                         ],
                         description:<>
-                            <Tooltip dataTooltip='Test test test q dad asdada d ad' text='Католики' src="test" />
+                            <Tooltip dataTooltip='Test test test q dad asdada d ad' text='Католики' name='Католики (2000-2024)' src="test-of-faith/gb/1/0" />
                             ad dad 
                             <Tooltip dataTooltip='Test test test q dad asdada d ad' text='Католики' />
                             sadadad
