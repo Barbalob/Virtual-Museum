@@ -1,5 +1,6 @@
 .header{
     display: flex;
+    position: relative;
     align-items: center;
     max-width: 1440px; 
     margin: 0 auto;
@@ -49,6 +50,7 @@
             line-height: 30.05px;
             text-align: left;
             color: rgba(11, 7, 1, 1);
+            white-space: nowrap;
             button{
                 position: relative;
                 font-family: "Manrope", sans-serif;
