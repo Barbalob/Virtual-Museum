@@ -16,7 +16,7 @@ const SectionsArticle = ({params, data}) => {
     const headPath = location.pathname.split('/');
 
 
-    const styleName = (!!article && !!sections) ? "sections-list" : "sections-list-2"
+    const styleName = "sections-list"
     return (
         <div className='sections-wrapper'>
             {!!sections ? 

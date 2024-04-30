@@ -1,5 +1,5 @@
 
-.sections-wrapper{
+.sections-wrapper-1{
     display: flex;
     justify-content: center;
     padding-bottom: 30px;   
@@ -50,7 +50,7 @@
 //HD
 @media (min-width: 992px) and (max-width: 1499px) {
 
-    .sections-wrapper{
+    .sections-wrapper-1{
         gap: 100px;
         padding-bottom: 30px;   
         .sections{
@@ -75,7 +75,7 @@
 //Portrait tablets and small desktops 
 @media (min-width: 768px) and (max-width: 991px) {
     
-    .sections-wrapper{
+    .sections-wrapper-1{
         padding-bottom: 30px;   
         .sections{
             &-list-2{
@@ -98,7 +98,7 @@
 
 //Mobile
 @media (max-width: 767px){
-    .sections-wrapper{
+    .sections-wrapper-1{
         padding-bottom: 30px;   
         .sections{ 
             &-list-2{

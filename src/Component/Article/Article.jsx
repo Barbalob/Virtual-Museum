@@ -15,7 +15,7 @@ const Article = ({params, data}) => {
 
     const styleName = "sections-list-2"
     return (
-        <div className='sections-wrapper'>
+        <div className='sections-wrapper-1'>
             {!!article ? 
             <div className='sections'>
                 <h3 className={styleName + "-title"}>Статьи раздела</h3>

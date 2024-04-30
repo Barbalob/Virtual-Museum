@@ -14,11 +14,11 @@ const CardDescription = ({type, description}) => {
             <img src={srcGold} style={{"display": "block", "margin":'0 auto'}} alt="" className="decor"/>
             <div className='card-description-wrapper' style={{"background": mainColor}}>
                 <NavLink to={`/${headPath[1]}/${headPath[2] === 'ru' ? 'gb' : 'ru'}/${headPath[3]}`}>
-                    <img style={{'position':"absolute", "top": "50%", 'left': '-70px'}} src={srcArrow} alt="" />
+                    <img className='arrow-decor-left' src={srcArrow} alt="" />
                 </NavLink>
                 <div className="card-description-wrapper-text">{description}</div>
                 <NavLink to={`/${headPath[1]}/${headPath[2] === 'ru' ? 'gb' : 'ru'}/${headPath[3]}`}>
-                    <img style={{'position':"absolute","top": "50%", 'right': '-70px',  "transform":'rotate(180deg)'}} src={srcArrow} alt="" />
+                    <img className='arrow-decor-right'  src={srcArrow} alt="" />
                 </NavLink>
             </div>
             <img src={srcGold} style={{"display": "block", "margin":'0 auto'}} alt="" className="decor"/>

@@ -65,10 +65,44 @@
         }
     }
 }
+@media (max-width: 1412px) {
+    .main__sections {
+        max-width: 990px;
+        background-size: auto 100%, auto 100.5%;
+        background-position: -11%, 113%;
+        .sections-list {
+            padding: 40px;
+            gap: 22px;
+
+            &-item {
+                width: 417px;
+                position: relative;
+
+                &:before {
+                    bottom: -11px;
+                    left: 11%;
+                    width: 320px;
+                    border-bottom: 3px solid #BFA181;
+                }
+            }
+
+            .sections-link {
+                padding: 5px 20px;
+                font-size: 24px;
+                width: 417px;
+                height: 115px;
+            }
+        }
+    }
+}
+
 
 //
 @media (max-width: 991px) {
     .main__sections {
+        background: url('../../assets/image7.png');
+        background-repeat: no-repeat;
+        background-size: cover;
         .sections-list {
             padding: 40px;
             gap: 22px;
@@ -124,6 +158,11 @@
 
 @media (max-width: 560px) {
     .main__sections {
+        background: url('../../assets/image7.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        background-position-y: center, center;
         .sections-list {
             padding: 20px;
             gap: 14px;
