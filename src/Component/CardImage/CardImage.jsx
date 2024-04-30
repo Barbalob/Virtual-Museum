@@ -6,7 +6,7 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 const CardImage = ({arrayImg}) => {
     const items = arrayImg.map(item => {
         return (
-            <figcaption className='card-image'>
+            <figcaption style={{'overflowX':'hidden'}} className='card-image'>
                     <img src={`${item.srcImg}`} alt="" />
                     <figure className='card-image-text'>{item.descriptionImg}</figure>
             </figcaption>
