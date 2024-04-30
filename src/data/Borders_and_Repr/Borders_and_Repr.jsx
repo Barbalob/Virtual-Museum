@@ -1,7 +1,7 @@
 import React from 'react';
 import Tooltip from '../../Component/Tooltip/Tooltip';
 import srcImage from '../../assets/CardImage/image15.png'
-import srcTicket113 from '../../assets/ticketImg/1.1.3.jpg'
+import srcTicket113 from '../../assets/ticketImg/1.1.3.png'
 import srcImage1 from '../../assets/CardImage/1BR/1.jpg'
 import srcImage2 from '../../assets/CardImage/1BR/2.jpg'
 import srcImage3 from '../../assets/CardImage/1BR/3.png'
@@ -15,7 +15,7 @@ import srcImage10 from '../../assets/CardImage/1BR/10.jpg'
 import srcImage11 from '../../assets/CardImage/1BR/11.png'
 import srcImage12 from '../../assets/CardImage/1BR/12.png'
 import srcImage13 from '../../assets/CardImage/1BR/13.jpg'
-import srcImage14 from '../../assets/CardImage/1BR/14png'
+import srcImage14 from '../../assets/CardImage/1BR/14.png'
 import srcImage15 from '../../assets/CardImage/1BR/15.jpg'
 import srcImage16 from '../../assets/CardImage/1BR/16.jpg'
 

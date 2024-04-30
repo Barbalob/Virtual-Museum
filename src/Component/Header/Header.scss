@@ -368,7 +368,7 @@
             line-height: 21.86px;
             text-align: left;
             color:rgba(11, 7, 1, 1);
-            
+            white-space: wrap;
             &::before {
                 content: url('../../assets/crown.svg');
                 z-index: 103;
