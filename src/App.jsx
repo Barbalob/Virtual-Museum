@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 import Main from './Page/Main';
 import Page1 from './Page/Page1';
 import Page2 from './Page/Page2';
+import AboutUs from './Page/AboutUs';
 import Bibliography from './Page/Bibliography';
 import PageMain from './Page/PageMain';
 import { Test_of_Faith } from './data/Test_of_Faith/Test_of_Faith';
@@ -31,6 +32,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/bibliography/ru" element={<Bibliography type='ru'/>} />
         <Route path="/bibliography/gb" element={<Bibliography type='gb'/>} />
         <Route path='/test-of-faith' element={<Outlet/>}>

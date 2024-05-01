@@ -40,7 +40,7 @@ const Header = (props) => {
                 <NavLink className='dropdown-list-item' to='/bibliography/gb'>Библиография Британия</NavLink>
               </ul>
             </li>
-            <li className="nav-list-item"><NavLink to='/'>Об авторах</NavLink></li>
+            <li className="nav-list-item"><NavLink to='/about'>Об авторах</NavLink></li>
       
           </ul>
         </nav>

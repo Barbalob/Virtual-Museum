@@ -1,0 +1,339 @@
+.about{
+    max-width: 1440px;
+    margin: 0 auto;
+    &-wrapper{
+        position: relative;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-title{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: center;
+    }
+    &-btn{
+        background: inherit;
+        position: relative;
+        
+    }
+    .checkbox-about {
+        position: absolute;
+        display: block;
+        height: 40px;
+        width:40px;
+        bottom: 0px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        width: 100%;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
+            &-img{
+                max-width: 100%;
+                object-fit: contain;
+            }
+            &-name{
+                max-width: 90%;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 38px;
+                text-align: center;
+            }
+            &-description{
+                display: none;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23.74px;
+                
+            }
+        }
+    }
+    &-list-2{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        flex-wrap: wrap;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            &-img{
+                max-width: 250px;
+                object-fit: contain;
+            }
+            &-name{
+                max-width: 60%;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 38px;
+                text-align: center;
+            }
+            &-description{
+                display: none;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23.74px;
+                
+            }
+        }
+    }
+}
+
+
+
+
+input[id="checkbox-about-1"]:checked ~ .about-btn #about-btn-img-1{
+    transform: rotate(180deg);
+}
+input[id="checkbox-about-1"]:checked ~ .about-list #about-list-item-description-1{
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+   gap: 20px;
+   align-items: center;
+   &::before{
+        content: '';
+        width: 80%;
+        height: 2px;
+        background: rgba(154, 126, 95, 1);
+   }
+}
+input[id="checkbox-about-2"]:checked ~ .about-btn #about-btn-img-2{
+    transform: rotate(180deg);
+}
+input[id="checkbox-about-2"]:checked ~ .about-list-2 #about-list-2-item-description-2{
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+   margin-top: 20px;
+   gap: 20px;
+   align-items: center;
+   &::before{
+        content: '';
+        width: 80%;
+        height: 2px;
+        background: rgba(154, 126, 95, 1);
+   }
+}
+input[id="checkbox-about-3"]:checked ~ .about-btn #about-btn-img-3{
+    transform: rotate(180deg);
+}
+input[id="checkbox-about-3"]:checked ~ .about-list #about-list-item-description-3{
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+   gap: 20px;
+   align-items: center;
+   &::before{
+        content: '';
+        width: 80%;
+        height: 2px;
+        background: rgba(154, 126, 95, 1);
+   }
+}
+
+//HD
+@media (min-width: 992px) and (max-width: 1499px) {
+
+}
+
+//Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {
+    .about{
+        max-width: 750px;
+        margin: 0 auto;
+        &-wrapper{
+            position: relative;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-title{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 48px;
+            text-align: center;
+        }
+        &-btn{
+            background: inherit;
+            position: relative;
+            
+        }
+        .checkbox-about {
+            position: absolute;
+            display: block;
+            height: 40px;
+            width:40px;
+            bottom: 0px;
+            z-index: 5;
+            opacity: 0;
+            cursor: pointer;
+        }
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            width: 100%;
+            &-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 20%;
+                &-img{
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+                &-name{
+                    max-width: 90%;
+                    font-size: 22px;
+                    font-weight: 400;
+                    line-height: 38px;
+                    text-align: center;
+                }
+                &-description{
+                    display: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 23.74px;
+                    
+                }
+            }
+        }
+        &-list-2{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            flex-wrap: wrap;
+            &-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 25%;
+                &-img{
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+                &-name{
+                    max-width: 60%;
+                    font-size: 22px;
+                    font-weight: 400;
+                    line-height: 38px;
+                    text-align: center;
+                }
+                &-description{
+                    display: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 23.74px;
+                    
+                }
+            }
+        }
+    }
+}
+
+//Mobile
+@media (max-width: 767px){
+    .about{
+        max-width: 100vw;
+        padding: 0px 20px;
+        margin: 0 auto;
+        &-wrapper{
+            gap: 10px;
+        }
+        &-title{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: center;
+        }
+        &-btn{
+            background: inherit;
+            position: relative;
+            
+        }
+        .checkbox-about {
+            position: absolute;
+            display: block;
+            height: 40px;
+            width:40px;
+            bottom: 0px;
+            z-index: 5;
+            opacity: 0;
+            cursor: pointer;
+        }
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+            flex-wrap: wrap;
+            &-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 40%;
+                &-img{
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+                &-name{
+                    max-width: 100%;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                &-description{
+                    display: none;
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 16.74px;
+                    
+                }
+            }
+        }
+        &-list-2{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            flex-wrap: wrap;
+            &-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 30%;
+                &-img{
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+                &-name{
+                    max-width: 100%;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                &-description{
+                    display: none;
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 16.74px;
+                    
+                }
+            }
+        }
+    }
+}
