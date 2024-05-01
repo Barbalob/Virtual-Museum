@@ -11,15 +11,16 @@ const BibliographyList = ({BibliographyList}) => {
     return (
         <>
             <ul className='bibliography-list'>
-                <NavLink to={`/${headPath[1]}/${headPath[2]=='ru' ? 'gb': 'ru'}`}><img style={{'position':"absolute", "top": "50%", 'left': '-150px'}} src={srcArrow} alt="" /></NavLink>
+                <NavLink className='arrow-decor-left' to={`/${headPath[1]}/${headPath[2]=='ru' ? 'gb': 'ru'}`}>
+                </NavLink>
                 
                 {BibliographyList.map((item, index)=>{
                     return <li key={index} className='bibliography-list-item'>{item}</li>
                 })}
 
-                <NavLink to={`/${headPath[1]}/${headPath[2]=='ru' ? 'gb': 'ru'}`}><img style={{'position':"absolute","top": "50%", 'right': '-150px',  "transform":'rotate(180deg)'}} src={srcArrow} alt="" /></NavLink>
+                <NavLink className='arrow-decor-right' to={`/${headPath[1]}/${headPath[2]=='ru' ? 'gb': 'ru'}`}></NavLink>
+                 <img src={srcGold} style={{"display": "block", "margin":'0 auto', 'paddingBottom':'30px'}} alt="" className="decor"/>
             </ul>
-            <img src={srcGold} style={{"display": "block", "margin":'0 auto', 'paddingBottom':'30px'}} alt="" className="decor"/>
         </>
     );
 };

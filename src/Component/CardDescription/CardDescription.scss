@@ -5,11 +5,21 @@
     align-items: center;
     margin-bottom: 40px;
     .arrow-decor-left{
+        background-image:url('../../assets/arrow.svg');
+        background-repeat: no-repeat;
+        width: 40px;
+        height:20px;
+        background-size:contain;
         position:absolute;
         top: 50%; 
         left: -70px
     }
     .arrow-decor-right{
+        background-image:url('../../assets/arrow.svg');
+        background-repeat: no-repeat;
+        width: 40px;
+        height:20px;
+        background-size:contain;
         position:absolute;
         top: 50%; 
         right: -70px; 
@@ -98,13 +108,17 @@
             width: 150px;
         }
         .arrow-decor-left{
-            left: 5px;
-            width: 25px;
+            background-image:url('../../assets/arrow-mobile.svg');
+            left: 10px;
+            height:20px;
+            width: 15px;
             
         }
         .arrow-decor-right{
-            right: 5px; 
-            width: 25px;
+            background-image:url('../../assets/arrow-mobile.svg');
+            right:10px; 
+            height:20px;
+            width: 15px;
         }
     }
     

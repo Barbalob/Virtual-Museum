@@ -3,6 +3,7 @@ import Header from '../Component/Header/Header';
 import MainTitle from '../Component/MainTitle/MainTitle';
 import TitleCard from '../Component/TitleCard/TitleCard';
 import BibliographyList from '../Component/BibliographyList/BibliographyList';
+import Footer from '../Component/Footer/Footer';
 
 
 const Bibliography = ({type}) => {
@@ -34,6 +35,7 @@ const Bibliography = ({type}) => {
             <MainTitle />
             <TitleCard title="Библиография Российская Империя"/>
             <BibliographyList BibliographyList={bibliographyList}/>
+            <Footer />
         </div> 
     );
 };
