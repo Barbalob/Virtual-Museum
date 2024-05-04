@@ -4,11 +4,10 @@ import { NavLink } from 'react-router-dom';
 import srcInformation from "../../assets/information.svg"
 
 
-const Tooltip = ({dataTooltip, text, src, name}) => {
+const Tooltip = ({dataTooltip, src, name}) => {
+    console.log(src);
     return (
-        <> 
-            {text ? <span className='tooltip-text'>{text}</span>: ''}
-            
+        <>  
             <div className='tooltip'>
                 <img  className='tooltip-img' src={srcInformation} alt="" />
                 <ul className='tooltip-list'>
@@ -17,7 +16,13 @@ const Tooltip = ({dataTooltip, text, src, name}) => {
                         {src ? <NavLink to={src}>ПОДРОБНЕЕ</NavLink>:""}
                     </div> */}
                     <p><span style={{color:'rgba(111, 80, 47, 1)', 'fontWeight': 700}}>{name} </span> - {dataTooltip}</p>
-                    {src ? <NavLink to={`/${src}`}>ПОДРОБНЕЕ</NavLink>:""}
+
+                    {src ? 
+                    src.map(el=>{
+                        console.log(el);
+                        return(<NavLink to={`/${el.src}`}>{el.text}</NavLink>)
+                    })
+                    :""}
                 </ul>
             </div>  
             {/* <span className='tooltip-text'>{text}</span>  
