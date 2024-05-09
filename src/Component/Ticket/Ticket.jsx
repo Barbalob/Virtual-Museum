@@ -13,7 +13,7 @@ const Ticket = ({type, description, srcImg}) => {
         <div className='ticket' style={{'backgroundImage': bg,"backgroundColor": mainColor  }}>
             <figcaption className='ticket-figcaption'>
                 <img className='ticket-figcaption-img' src={srcImg} alt="" /> 
-                <figure className='ticket-figcaption-text'>{description}</figure>
+                {/* <figure className='ticket-figcaption-text'>{description}</figure> */}
             </figcaption>
             <div className='ticket-decore'>
                 <p className='ticket-decore-date'>02</p>
