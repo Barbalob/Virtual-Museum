@@ -8,8 +8,6 @@ import Footer from '../Component/Footer/Footer';
 
 const Bibliography = ({type, bibliographyList}) => {
     const mainColor = type==='ru'? 'rgba(255, 255, 255, 1)' : 'rgba(220, 206, 191, 1)'
-
-    
     return (
         <div className='wrapper' style={{
             "heightMin":"100vh",
