@@ -15,7 +15,7 @@ const Tooltip = ({dataTooltip, src, name}) => {
                         <p>{dataTooltip}</p>
                         {src ? <NavLink to={src}>ПОДРОБНЕЕ</NavLink>:""}
                     </div> */}
-                    <p><span style={{color:'rgba(111, 80, 47, 1)', 'fontWeight': 700}}>{name} </span> - {dataTooltip}</p>
+                    <p><span style={{color:'rgba(111, 80, 47, 1)', 'fontWeight': 700}}>{name}</span> {dataTooltip}</p>
 
                     {src ? 
                     src.map(el=>{

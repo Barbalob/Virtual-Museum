@@ -39,7 +39,7 @@ const Page2 = ({data}) => {
                         <CardImage 
                             arrayImg={el.arrayImg} 
                         />
-                        <CardDescription2 type={type} description={subCard.description}/>
+                        <CardDescription2 type={type} description={el.description}/>
                     </Element>
                 )
             }) : ''}
