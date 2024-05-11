@@ -61,7 +61,7 @@ import srcImage31_29 from '../../assets/CardImage/3RU/31_29.png'
 
 export const Birth_of_the_State = {
     // href:"test-of-faith",
-    title: '',
+    title: 'Рождение государства: «Левиафан» и регулярное государство',
     mainDescription: [
         {
             srcImg:srcPopup1ru,

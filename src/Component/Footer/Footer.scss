@@ -42,7 +42,6 @@
             font-weight: 600;
             line-height: 25px;
             text-align: center;
-
         }
     }
     .vertically-line{
@@ -51,6 +50,63 @@
     }
 }
 
+.footer-list-item-drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &-btn{
+        background-color: inherit;
+        img{
+            // width: 30px;
+        }
+        p{
+            font-family: "Manrope", sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 38px;
+            text-align: center;
+            color: rgba(116, 110, 73, 1);
+
+        }
+    }
+}
+
+.footer-list-item-drop:hover .dropdown-list-footer {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+.dropdown-list-footer {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: -80%;
+    background: rgba(255, 255, 255, 1);
+    min-width: 300px;
+    padding: 12px;
+    border-radius:10px;
+    box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.12), 4px 4px 4px 0px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+    &-item{
+        display: flex;
+        position: relative;
+        z-index: 102;
+        // align-items:center;
+        gap: 6px;
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.86px;
+        text-align: left;
+        color:rgba(11, 7, 1, 1);
+        
+        &::before {
+            content: url('../../assets/crown.svg');
+            z-index: 103;
+        }
+    }
+}
 //HD
 @media (min-width: 992px) and (max-width: 1499px) {
     .footer{
@@ -164,6 +220,52 @@
             height: 200px;
         }
     }
+    .footer-list-item-drop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &-btn{
+            background-color: inherit;
+            img{
+                width: 45px;
+            }
+            p{
+                font-family: "Manrope", sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 38px;
+                text-align: center;
+                color: rgba(116, 110, 73, 1);
+    
+            }
+        }
+    }
+    .dropdown-list-footer {
+        min-width: 250px;
+        padding: 12px;
+        border-radius:10px;
+        box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.12), 4px 4px 4px 0px rgba(0, 0, 0, 0.12);
+        z-index: 1000;
+        &-item{
+            display: flex;
+            position: relative;
+            z-index: 102;
+            // align-items:center;
+            gap: 6px;
+            font-family: "Manrope", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21.86px;
+            text-align: left;
+            color:rgba(11, 7, 1, 1);
+            
+            &::before {
+                content: url('../../assets/crown.svg');
+                z-index: 103;
+            }
+        }
+    }
 }
 
 //Mobile
@@ -223,6 +325,54 @@
         .vertically-line{
             width: 1px;
             height: 00px;
+        }
+    }
+    .footer-list-item-drop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &-btn{
+            background-color: inherit;
+            img{
+                width: 30px;
+            }
+            p{
+                font-family: "Manrope", sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: center;
+                color: rgba(116, 110, 73, 1);
+    
+            }
+        }
+    }
+    .dropdown-list-footer {
+        left: -100px;
+        top: -85px;
+        min-width: 200px;
+        padding: 12px;
+        border-radius:10px;
+        box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.12), 4px 4px 4px 0px rgba(0, 0, 0, 0.12);
+        z-index: 1000;
+        &-item{
+            display: flex;
+            position: relative;
+            z-index: 102;
+            // align-items:center;
+            gap: 6px;
+            font-family: "Manrope", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            color:rgba(11, 7, 1, 1);
+            
+            &::before {
+                content: url('../../assets/crown.svg');
+                z-index: 103;
+            }
         }
     }
 }
