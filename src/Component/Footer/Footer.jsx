@@ -38,14 +38,21 @@ const Footer = () => {
                 </li> 
                 <li style={styleLine} className="vertically-line"></li>
                 <li className="footer-list-item">
-                    <NavLink to='/bibliography/ru' className="footer-list-item-a">
-                        <img className="footer-list-item-a-img" src={`${srcDict.srcBibliography}`} alt="" />
-                        <p style={styleText} className="footer-list-item-a-text">Библиография</p>
-                    </NavLink>
+                    <li className="footer-list-item-drop">
+                        <button className='footer-list-item-drop-btn'>
+                            <img className="footer-list-item-a-img" src={`${srcDict.srcBibliography}`} alt="" />
+                            <p style={styleText} className="footer-list-item-a-text">Библиография</p>
+                        </button>
+                        <ul className='dropdown-list-footer'>
+                            <NavLink className='dropdown-list-footer-item' to='/bibliography/ru'>Библиография Россия</NavLink>
+                            <NavLink className='dropdown-list-footer-item' to='/bibliography/gb'>Библиография Британия</NavLink>
+                        </ul>
+                    </li>
+                    
                 </li>
                 <li style={styleLine} className="vertically-line"></li>
                 <li className="footer-list-item">
-                    <NavLink to="#"  NavLink className="footer-list-item-a">
+                    <NavLink to="/about"  NavLink className="footer-list-item-a">
                         <img className="footer-list-item-a-img" src={`${srcDict.srcUsers}`} alt="" />
                         <p style={styleText} className="footer-list-item-a-text">Авторы</p>
                     </NavLink>

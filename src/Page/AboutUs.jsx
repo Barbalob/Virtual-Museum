@@ -3,6 +3,7 @@ import AboutAuthors from '../Component/AboutAuthors/AboutAuthors'
 import Header from '../Component/Header/Header'
 import MainTitle from '../Component/MainTitle/MainTitle'
 import TitleCard from '../Component/TitleCard/TitleCard'
+import Footer from '../Component/Footer/Footer';
 
 const AboutUs = () => {
     return (
@@ -11,6 +12,7 @@ const AboutUs = () => {
             <MainTitle />
             <TitleCard title='Об авторах'/>
             <AboutAuthors />
+            <Footer />
         </>
     );
 };
