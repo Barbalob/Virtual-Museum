@@ -95,10 +95,6 @@ function CreateNav (data, href) {
 const Header = (props) => {
   const listLink = [
     {
-      href:'/test-of-faith',
-      data:Test_of_Faith
-    },
-    {
       href:'/space-life-knowledge',
       data:Borders_and_Repr
     },
@@ -111,21 +107,26 @@ const Header = (props) => {
       data:Birth_of_the_State
     },
     {
-      href:'/eradication-of-vices',
-      data:Eradication_of_vices
+      href:'/test-of-faith',
+      data:Test_of_Faith
+    },
+    {
+      href:'/empire-building',
+      data:Empire_Building
     },
     {
       href:'/understanding-life-and-death',
       data:Understanding_life_and_death
     },
     {
+      href:'/eradication-of-vices',
+      data:Eradication_of_vices
+    },
+    {
       href:'/raising-a-new-man',
       data:Raising_a_new_Man
     },
-    {
-      href:'/empire-building',
-      data:Empire_Building
-    },
+    
   ]
 
   return (
