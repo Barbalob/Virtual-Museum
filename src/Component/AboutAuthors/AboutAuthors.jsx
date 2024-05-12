@@ -118,7 +118,7 @@ const AboutAuthors = () => {
 
             <div className='about-wrapper'>
                 <input id='checkbox-about-1' className="checkbox-about" type="checkbox" name=""/>
-                <h2 className='about-title'>Написание текстов</h2>
+                <h2 className='about-title'>Научные консультанты</h2>
                 <ul className="about-list">
                     {scientificConsultants.map((el, index )=> {
                         return (
@@ -137,7 +137,7 @@ const AboutAuthors = () => {
 
             <div className='about-wrapper'>
                 <input id='checkbox-about-2' className="checkbox-about" type="checkbox" name=""/>
-                <h2 className='about-title'>Научные консультанты</h2>
+                <h2 className='about-title'>Авторы статей</h2>
                 <ul className="about-list-2">
                     {Lyricists.map((el, index )=> {
                         return (

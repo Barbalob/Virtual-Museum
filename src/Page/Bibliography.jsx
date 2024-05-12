@@ -8,6 +8,7 @@ import Footer from '../Component/Footer/Footer';
 
 const Bibliography = ({type, bibliographyList}) => {
     const mainColor = type==='ru'? 'rgba(255, 255, 255, 1)' : 'rgba(220, 206, 191, 1)'
+    const title = type==='ru'? 'Библиография Российская Империя' : 'Библиография Британская Империя'
     return (
         <div className='wrapper' style={{
             "heightMin":"100vh",
@@ -16,7 +17,7 @@ const Bibliography = ({type, bibliographyList}) => {
         }> 
             <Header />
             <MainTitle />
-            <TitleCard title="Библиография Российская Империя"/>
+            <TitleCard title={title}/>
             <BibliographyList BibliographyList={bibliographyList}/>
             <Footer />
         </div> 
