@@ -67,7 +67,7 @@ function CreateNav (data, href) {
               {mainEl.list.map((el, index1)=>{
 
                 const ref= useRef()
-                const onClick = () => {console.log(ref.current.classList.toggle("activeList"));}
+                const onClick = () => {ref.current.classList.toggle("activeList")}
 
                 return (
                   <>
@@ -87,7 +87,6 @@ function CreateNav (data, href) {
         })}
       </div>
   </>
-  // console.log(data.listSections);
 }
 
 

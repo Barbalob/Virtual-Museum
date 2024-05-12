@@ -5,10 +5,8 @@ import srcTicketDecor2 from "../../assets/ticket-decor2.png"
 
 
 const Ticket = ({type, description, srcImg}) => {
-    console.log(type);
     const mainColor = type==='ru'?  'rgba(220, 206, 191, 1)' : 'rgba(255, 255, 255, 1)' 
     const bg = type==='ru' ? `url(${srcTicketDecor})`:`url(${srcTicketDecor2})`
-    console.log(bg);
     return (
         <div className='ticket' style={{'backgroundImage': bg,"backgroundColor": mainColor  }}>
             <figcaption className='ticket-figcaption'>
