@@ -5,7 +5,6 @@ import srcInformation from "../../assets/information.svg"
 
 
 const Tooltip = ({dataTooltip, src, name}) => {
-    console.log(src);
     return (
         <>  
             <div className='tooltip'>
@@ -19,7 +18,6 @@ const Tooltip = ({dataTooltip, src, name}) => {
 
                     {src ? 
                     src.map(el=>{
-                        console.log(el);
                         return(<NavLink to={`/${el.src}`}>{el.text}</NavLink>)
                     })
                     :""}

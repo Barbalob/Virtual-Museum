@@ -8,7 +8,6 @@ const CardDescription = ({type, description}) => {
     const mainColor = type==='ru'?  'rgba(220, 206, 191, 1)' : 'rgba(255, 255, 255, 1)' 
     const location = useLocation();
     const headPath = location.pathname.split('/');
-    console.log(headPath);
     return (
         <div className='card-description'>
             <img src={srcGold} style={{"display": "block", "margin":'0 auto'}} alt="" className="decor"/>

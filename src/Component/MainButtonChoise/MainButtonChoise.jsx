@@ -3,7 +3,6 @@ import {Link, NavLink} from "react-router-dom";
 import './MainButtonChoise.scss'
 
 const MainButtonChoise = ({listLink}) => {
-  console.log(listLink);
   return (
     <>
       <div className="main__sections"> 
