@@ -1,6 +1,7 @@
 .footer{
     width: 100%;
     margin: 0 auto;
+    padding: 50px 0;
     box-shadow: 1px 1px 3px black;
     &-list{
         max-width: 1440px;
@@ -8,8 +9,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &-wrapper{
+            display: flex;
+        }
         &-item{
-            width: 290px;
+            width: 230px;
             &-a{
                 display: flex;
                 flex-direction: column; 
@@ -23,25 +27,34 @@
                     color: rgba(116, 110, 73, 1);
 
                 }
+                img{
+                    // width: 60px;
+                }
             }
         }
     }
     &-logo{
+        width: 400px;
         display: flex;
         flex-direction: column;
-        padding-right: 76px;
-        gap: 29px;
-        align-items: center;
-        text-align: center;
+        padding-right: 35px;
+        gap: 15px;
+        &-list{
+            display: flex;
+        }
+        // align-items: center;
+        // text-align: center;
         img{
-            width: 300px;
+            width: 65%;
+            object-fit: contain;
         }
         p{
+
             font-family: "Manrope", sans-serif;
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 25px;
-            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
         }
     }
     .vertically-line{
@@ -110,7 +123,7 @@
 //HD
 @media (min-width: 992px) and (max-width: 1499px) {
     .footer{
-        width:100vw;
+        width: 100%;
         margin: 0 auto;
         &-list{
             max-width: 900px;
@@ -119,7 +132,7 @@
             justify-content: center;
             align-items: center;
             &-item{
-                width: 250px;
+                width: 200px;
                 &-a{
                     display: flex;
                     flex-direction: column; 
@@ -138,22 +151,17 @@
         }
         &-logo{
             display: flex;
-            width: 225px;
+            width: 450px;
             flex-direction: column;
             padding-right: 15px;
-            gap: 29px;
-            align-items: center;
-            text-align: center;
+            gap: 10px;
             img{
-                width: 225px;
             }
             p{
                 font-family: "Manrope", sans-serif;
-                font-size: 18px;
-                font-weight: 600;
-                line-height: 24px;
-                text-align: center;
-    
+                font-size: 16px;
+                line-height: 18px;
+  
             }
         }
         .vertically-line{
@@ -174,6 +182,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
             &-item{
                 width: 170px;
                 &-a{
@@ -197,22 +206,17 @@
         }
         &-logo{
             display: flex;
-            width: 225px;
+            width: 250px;
             flex-direction: column;
             padding-right: 10px;
             gap: 29px;
-            align-items: center;
-            text-align: center;
             img{
-                width: 225px;
+                // width: 225px;
             }
             p{
                 font-family: "Manrope", sans-serif;
-                font-size: 15px;
-                font-weight: 600;
-                line-height: 20px;
-                text-align: center;
-    
+                font-size: 12px;
+                line-height:14px;
             }
         }
         .vertically-line{
@@ -272,15 +276,22 @@
 @media (max-width: 767px){
     .footer{
         width:100vw;
-        
+        padding: 30px 30px;
         margin: 0 auto;
         &-list{
             max-width: 100vw;
-            height: 150px;
             margin: 0 auto;
             display: flex;
+            gap: 10px;
+            flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
+            &-wrapper{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                
+            }
             &-item{
                 width: 30%;
                 &-a{
@@ -304,14 +315,22 @@
         }
         &-logo{
             display: flex;
-            width: 225px;
+            width: 100%;
             flex-direction: column;
             padding-right: 5px;
-            gap: 15px;
+            gap: 10 px;
             align-items: center;
             text-align: center;
+            flex-direction: column-reverse;
+            &-list{
+                display: flex;
+                justify-content: center;
+                .logo-1{
+                    width: 140px;
+                }
+            }
             img{
-                width: 100px;
+                width: 70px;
             }
             p{
                 font-family: "Manrope", sans-serif;

@@ -5,12 +5,12 @@ import MainImage from '../Component/MainImage/MainImage';
 import MainDescription from '../Component/MainDescription/MainDescription';
 import MainButtonChoise from '../Component/MainButtonChoise/MainButtonChoise';
 import {listLink} from '../data/Link/Link.js'
+import { useLocation } from 'react-router-dom';
 
 const Main = () => {
-
     return (
         <div>
-            <Header />
+            <Header/>
             <MainImage />
             <MainDescription />
             <MainButtonChoise listLink={listLink} />

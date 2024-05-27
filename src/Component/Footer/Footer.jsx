@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Footer.scss'
 import { useLocation } from 'react-router-dom';
 import srcRussianScienceFoundationWhite from "../../assets/RussianScienceFoundationWhite.png"
+import srcUrfuLogo from "../../assets/urfuLogoWhite.svg"
 
 import srcHome from "../../assets/icon/home.png"
 import srcBibliography from "../../assets/icon/search.png"
@@ -26,17 +27,22 @@ const Footer = () => {
         <div className='footer' style={styleFooter}>
             <ul className='footer-list'>
                 <li className="footer-list-item footer-logo">
-                    <img src={`${srcDict.srcLogo}`} alt="" className="footer-list-item-img" />
-                    <p style={styleText} className="footer-list-item-a-text">Сайт разработан при <br/> поддержке Российского<br/> научного фонда - РНФ</p>
+                    <div className='footer-logo-list'>
+                        <img src={`${srcDict.srcLogo}`} alt="" className="footer-list-item-img logo-1" />
+                        <img src={`${srcUrfuLogo}`} alt="" className="footer-list-item-img logo-2" />
+                    </div>
+                    <p style={styleText} className="footer-list-item-a-text">Виртуальный музей создан при поддержке Российского научного фонда, проект № 22-18-00488 «Кризис ценностей и стратегии преодоления: идея “общего блага” в интеллектуальном дискурсе Британии и России (1650–1750)»</p>
                 </li>
-                <li style={styleLine} className="vertically-line"></li>
+                <div className='footer-list-wrapper'>
+
+                {/* <li style={styleLine} className="vertically-line"></li> */}
                 <li className="footer-list-item">
                     <NavLink to='/' className="footer-list-item-a">
                         <img className="footer-list-item-a-img" src={`${srcDict.srcHome}`} alt="" />
                         <p style={styleText} className="footer-list-item-a-text">В начало</p>
                     </NavLink> 
                 </li> 
-                <li style={styleLine} className="vertically-line"></li>
+                {/* <li style={styleLine} className="vertically-line"></li> */}
                 <li className="footer-list-item">
                     <li className="footer-list-item-drop">
                         <button className='footer-list-item-drop-btn'>
@@ -50,13 +56,14 @@ const Footer = () => {
                     </li>
                     
                 </li>
-                <li style={styleLine} className="vertically-line"></li>
+                {/* <li style={styleLine} className="vertically-line"></li> */}
                 <li className="footer-list-item">
                     <NavLink to="/about"  NavLink className="footer-list-item-a">
                         <img className="footer-list-item-a-img" src={`${srcDict.srcUsers}`} alt="" />
                         <p style={styleText} className="footer-list-item-a-text">Авторы</p>
                     </NavLink>
                 </li>
+                </div>
             </ul>
             
         </div>

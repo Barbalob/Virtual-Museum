@@ -1,8 +1,9 @@
-import React, { useRef } from 'react';
-import {NavLink} from "react-router-dom";
+import React, { useEffect, useRef, useState } from 'react';
+import {NavLink, useLocation} from "react-router-dom";
 import './Header.scss'
 import {listLink} from '../../data/Link/Link.js'
 import srcRussianScienceFoundation from "../../assets/RussianScienceFoundation.png"
+import srcUrfuLogo from "../../assets/urfuLogo.png"
 
 import srcArrow from '../../assets/arrow-mobile.svg'
 
@@ -92,7 +93,9 @@ function CreateNav (data, href) {
 
 
 
-const Header = (props) => {
+const Header = ({href}) => {
+  console.log(href);
+  const [flag, setFlag] = useState(true)
   const listLink = [
     {
       href:'/space-life-knowledge',
@@ -126,14 +129,17 @@ const Header = (props) => {
       href:'/raising-a-new-man',
       data:Raising_a_new_Man
     },
-    
+
   ]
+
+  useEffect(()=>{
+  })
 
   return (
     <div className='header'>
         <div className="logo">
           <img src={srcRussianScienceFoundation} alt="" className="logo-img" />
-          <p className="logo-p">Сайт разработан при поддержке<br/> Российского научного фонда - РНФ</p>
+          {/* <p className="logo-p">Сайт разработан при поддержке<br/> Российского научного фонда - РНФ</p> */}
         </div>
         
         <input className="checkbox" type="checkbox" name="" id="" />
@@ -159,8 +165,8 @@ const Header = (props) => {
               
               <button className='nav-list-item-btn'>Библиография</button>
               <ul className='dropdown-list dropdown-list-bibliography'>
-                <NavLink className='dropdown-list-item-bibliography' to='/bibliography/ru'>Библиография Россия</NavLink>
-                <NavLink className='dropdown-list-item-bibliography' to='/bibliography/gb'>Библиография Британия</NavLink>
+                <NavLink className='dropdown-list-item-bibliography' to='/bibliography/ru'>Россия</NavLink>
+                <NavLink className='dropdown-list-item-bibliography' to='/bibliography/gb'>Британия</NavLink>
               </ul>
             </li>
             <li className="nav-list-item nav-list-item-a"><NavLink to='/about'>Об авторах</NavLink></li>
@@ -168,6 +174,9 @@ const Header = (props) => {
           </ul>
         </nav>
 
+        <div className="logo">
+          <img src={srcUrfuLogo} alt="" className="logo-img-2" />
+        </div>
 </div>
 
   );

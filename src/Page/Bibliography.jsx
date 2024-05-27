@@ -8,7 +8,7 @@ import Footer from '../Component/Footer/Footer';
 
 const Bibliography = ({type, bibliographyList}) => {
     const mainColor = type==='ru'? 'rgba(255, 255, 255, 1)' : 'rgba(220, 206, 191, 1)'
-    const title = type==='ru'? 'Библиография Российская Империя' : 'Библиография Британская Империя'
+    const title = type==='ru'? 'Россия' : 'Британия'
     return (
         <div className='wrapper' style={{
             "heightMin":"100vh",
