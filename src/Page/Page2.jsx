@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../Component/Header/Header';
 import MainTitle from '../Component/MainTitle/MainTitle';
 import TitleCard from '../Component/TitleCard/TitleCard';
@@ -7,9 +7,10 @@ import CardDescription2 from '../Component/CardDescription2/CardDescription2';
 import Article from '../Component/Article/Article';
 import SubTitle from '../Component/SubTitle/SubTitle';
 import NavArticle from '../Component/NavArticle/NavArticle';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import Footer from '../Component/Footer/Footer';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import Header2 from '../Component/Header/Header2';
 
 const Page2 = ({data}) => {
     const params = useParams()
@@ -18,13 +19,20 @@ const Page2 = ({data}) => {
     const subCard = card.sectionArticles[subid]
     const a = !!(subCard.arrayArticles)
     const mainColor = type==='ru'? 'rgba(255, 255, 255, 1)' : 'rgba(220, 206, 191, 1)'
+    const loc = useLocation().pathname
+    const [flag, setFlag] = useState(true)
+    useEffect(()=>{
+        console.log("Effect", loc);
+        setFlag(!flag)
+    }, [loc])
+
     return ( 
         <div className='wrapper' style={{
             "minHeight":"100vh",
             "background": mainColor,
             }
         }> 
-            <Header />
+            {flag ? <Header/> : <Header2/>}
             <MainTitle />
             <TitleCard title={subCard.title} page='Page2'/>
             <CardImage 

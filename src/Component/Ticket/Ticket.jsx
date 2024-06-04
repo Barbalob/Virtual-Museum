@@ -19,6 +19,11 @@ const Ticket = ({type, description, srcImg}) => {
                 <p className='ticket-decore-date'>04</p>
                 <p className='ticket-decore-year'>2024</p> 
             </div> */}
+            {/* <div className='ticket-decore'>
+                <div className='dot'></div>
+                <div className="ticket-line"></div>
+                <div className='dot'></div> 
+            </div>  */}
             <div className='ticket-title'>ЭПОХА ПЕРЕМЕН</div>
         </div>
     );

@@ -93,9 +93,7 @@ function CreateNav (data, href) {
 
 
 
-const Header = ({href}) => {
-  console.log(href);
-  const [flag, setFlag] = useState(true)
+const Header = () => {
   const listLink = [
     {
       href:'/space-life-knowledge',
@@ -131,9 +129,12 @@ const Header = ({href}) => {
     },
 
   ]
-
-  useEffect(()=>{
-  })
+  // const loc = useLocation().pathname
+  // useEffect(()=>{
+  //   console.log("Effect", loc);
+  //   // setFlag(!flag)
+  //   setTimeout(()=>{console.log('time');}, 10)
+  // }, [loc])
 
   return (
     <div className='header'>
@@ -152,13 +153,14 @@ const Header = ({href}) => {
 
         <nav className='nav'>
           <ul className="nav-list">
+
             <li className="nav-list-item">
               <button className='nav-list-item-btn'>Разделы</button>
-
+              
               <ul className='dropdown-list'>
-                {listLink.map(link=>{
-                  return  CreateNav(link.data, link.href)
-                })}
+                {
+                listLink.map(link=>{return CreateNav(link.data, link.href)})
+                }
               </ul>
             </li>
             <li className="nav-list-item">
