@@ -10,7 +10,7 @@
             gap:50px;
             max-width: 1440px;
             &-text{
-                box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12) inset;
+                // box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12) inset;
                 padding: 10px;
                 border-radius:10px;
                 font-size: 22px;
@@ -81,10 +81,20 @@
                 &-text{
                     max-height: 400px;
                     text-align: left;
-                    -ms-overflow-style: none;
-                    scrollbar-width: none; 
-                    overflow-y: scroll;
-                    
+                    // -ms-overflow-style: none;
+                    // scrollbar-width: none; 
+                    overflow-y: scroll; 
+                    &::-webkit-scrollbar {
+                        width: 3px;
+                        border-radius:10px;
+                    }
+                    &::-webkit-scrollbar-track {
+                            background: inherit;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                            background-color: rgb(154, 126, 95);
+                            border-radius: 5px;
+                    }
                 }
                 &-img{
                     padding: 32px 40px;

@@ -5,10 +5,17 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 const CardImage = ({arrayImg}) => {
     console.log(arrayImg);
+    const handleClick =  ({target}) => {
+        if(!document.fullscreenElement){
+            target.requestFullscreen().catch((err)=>console.log(err))
+        } else {
+            document.exitFullscreen();
+        }
+    }
     const items = arrayImg.map(item => {
         return (
             <figcaption style={{'overflowX':'hidden'}} className='card-image'>
-                    <img src={`${item.srcImg}`} alt="" />
+                    <img onClick={handleClick} src={`${item.srcImg}` } alt="" />
                     <figure className='card-image-text'>{item.descriptionImg}</figure>
             </figcaption>
         )
