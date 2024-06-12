@@ -1,22 +1,22 @@
 import React from 'react';
 import './AboutAuthors.scss'
-import srcArtem from '../../assets/photo/Artem.jpg'
-import srcAndrey from '../../assets/photo/Andrey.jpg'
-import srcGavrilin from '../../assets/photo/Gavrilin.jpg'
-import srcKalinina from '../../assets/photo/Kalinina.jpg'
-import srcKisilev from '../../assets/photo/Kisilev.jpg'
-import srcLisa from '../../assets/photo/Lisa.jpg'
-import srcMaiorov from '../../assets/photo/Maiorov.jpg'
-import srcMaria from '../../assets/photo/Maria.jpg'
-import srcPopovich from '../../assets/photo/Popovich.jpg'
-import srcRepina from '../../assets/photo/Repina.jpg'
-import srcShipicina from '../../assets/photo/Shipicina.jpg'
-import srcShpak from '../../assets/photo/Shpak.jpg'
-import srcSoboleva from '../../assets/photo/Soboleva.jpg'
-import srcSolovjeva from '../../assets/photo/Solovjeva.jpg'
-import srcSozinova from '../../assets/photo/Sozinova.jpg'
-import srcVisokova from '../../assets/photo/Visokova.jpg'
-import srcZubko from '../../assets/photo/Zubko.jpg'
+import srcArtem from '../../assets/photo/Artem-min.jpg'
+import srcAndrey from '../../assets/photo/Andrey-min.jpg'
+import srcGavrilin from '../../assets/photo/Gavrilin-min.jpg'
+import srcKalinina from '../../assets/photo/Kalinina-min.jpg'
+import srcKisilev from '../../assets/photo/Kisilev-min.jpg'
+import srcLisa from '../../assets/photo/Lisa-min.jpg'
+import srcMaiorov from '../../assets/photo/Maiorov-min.jpg'
+import srcMaria from '../../assets/photo/Maria-min.jpg'
+import srcPopovich from '../../assets/photo/Popovich-min.jpg'
+import srcRepina from '../../assets/photo/Repina-min.jpg'
+import srcShipicina from '../../assets/photo/Shipicina-min.jpg'
+import srcShpak from '../../assets/photo/Shpak-min.jpg'
+import srcSoboleva from '../../assets/photo/Soboleva-min.jpg'
+import srcSolovjeva from '../../assets/photo/Solovjeva-min.jpg'
+import srcSozinova from '../../assets/photo/Sozinova-min.jpg'
+import srcVisokova from '../../assets/photo/Visokova-min.jpg'
+import srcZubko from '../../assets/photo/Zubko-min.jpg'
 
 import srcArrow from '../../assets/arrow-down.svg'
 
@@ -47,47 +47,47 @@ const AboutAuthors = () => {
         {
             name: 'Шпак Георгий Владимирович',
             src:srcShpak,
-            description:'Кандидат исторических наук, старший научный сотрудник Центра сравнительной истории и теории цивилизаций Института всеобщей истории РАН, старший научный сотрудник лаборатории эдиционной археографии Уральского федерального университета, преподаватель Российского государственного гуманитарного университета.'
+            description:'Кандидат исторических наук, старший научный сотрудник Центра сравнительной истории и теории цивилизаций Института всеобщей истории РАН, старший научный сотрудник лаборатории эдиционной археографии Уральского федерального университета, преподаватель Российского государственного гуманитарного университета. (Куратор проекта; разработка раздела «Освоение пространства»).'
         },
         {
             name: 'Шипицына Юлия Сергеевна',
             src:srcShipicina,
-            description:'Ассистент кафедры зарубежного регионоведения Уральского федерального университета.'
+            description:'Ассистент кафедры зарубежного регионоведения Уральского федерального университета. (Разработка раздела «Подчинение природы»).'
         },
         {
             name: 'Попович Алексей Игоревич',
             src:srcPopovich,
-            description:'Младший научный сотрудник лаборатории эдиционной археографии, ассистент кафедры русской и зарубежной литературы Уральского федерального университета.'
+            description:'Младший научный сотрудник лаборатории эдиционной археографии, ассистент кафедры русской и зарубежной литературы Уральского федерального университета. (Выпускающий редактор; разработка российской части разделов «Рождение государства», «Испытание верой», «Строительство империи»).'
         },
         {
             name: 'Гаврилин Борис Александрович',
             src:srcGavrilin,
-            description:'Ассистент кафедры зарубежного регионоведения Уральского федерального университета.'
+            description:'Ассистент кафедры зарубежного регионоведения Уральского федерального университета. (Разработка британской части разделов «Рождение государства», «Испытание верой», «Строительство империи»)'
         },
         {
             name: 'Калинина Алена Денисовна',
             src:srcKalinina,
-            description:'Документовед отдела организации научной и инновационной работы Уральского гуманитарного института Уральского федерального университета.'
+            description:'Документовед отдела организации научной и инновационной работы Уральского гуманитарного института Уральского федерального университета. (Разработка российской части разделов «Осмысление жизни и смерти», «Искоренение пороков», «Воспитание “нового” человека»). '
         },
         {
             name: 'Созинова Ксения Андреевна',
             src:srcSozinova,
-            description:'Кандидат исторических наук, доцент кафедры зарубежного регионоведения Уральского федерального университета.'
+            description:'Кандидат исторических наук, доцент кафедры зарубежного регионоведения Уральского федерального университета. (Разработка британской части разделов «Осмысление жизни и смерти», «Искоренение пороков», «Воспитание “нового” человека»).'
         },
         {
             name: 'Майоров Кирилл Владимирович',
             src:srcMaiorov,
-            description:'Специалист по учебно-методической работе кафедры истории искусств и музееведения Уральского федерального университета.'
+            description:'Специалист по учебно-методической работе кафедры истории искусств и музееведения Уральского федерального университета. (Участие в разработке британской части разделов «Строительство империи», «Искоренение пороков», «Воспитание “нового” человека»).'
         },
         {
             name: 'Зубко Ксения Витальевна',
             src:srcZubko,
-            description:'Лаборант-исследователь лаборатории эдиционной археографии Уральского федерального университета.'
+            description:'Лаборант-исследователь лаборатории эдиционной археографии Уральского федерального университета. (Участие в разработке российской части разделов «Осмысление жизни и смерти», «Искоренение пороков», «Воспитание “нового” человека»).'
         },
         {
             name: 'Соловьева Екатерина Алексеевна',
             src:srcSolovjeva,
-            description:'Магистрант Уральского федерального университета.'
+            description:'Магистрант Уральского федерального университета. (Участие в разработке британской части разделов «Рождение государства», «Испытание верой»)'
         },
     ]
 
@@ -146,7 +146,6 @@ const AboutAuthors = () => {
                                 <p className="about-list-2-item-name">{el.name}</p>
                                 <p id="about-list-2-item-description-2" className="about-list-2-item-description">
                                     {el.description}
-                                    Доктор исторических наук, доцент, профессор кафедры новой и новейшей истории Уральского федерального университета.
                                  </p>
                             </li>
                         )

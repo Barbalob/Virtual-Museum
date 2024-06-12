@@ -89,7 +89,7 @@ import srcImage61_24 from '../../assets/CardImage/6RU/61_24.png'
 
 export const Understanding_life_and_death = {
     // href:"test-of-faith",
-    title: 'Осмысление жизни и смерти: человек –семья – социум',
+    title: 'Осмысление жизни и смерти: человек – семья – социум',
     mainDescription: [
         {
             srcImg:srcPopup1ru,
