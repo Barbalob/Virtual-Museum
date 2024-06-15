@@ -22,7 +22,6 @@ const Page2 = ({data}) => {
     const loc = useLocation().pathname
     const [flag, setFlag] = useState(true)
     useEffect(()=>{
-        console.log("Effect", loc);
         setFlag(!flag)
     }, [loc])
 
