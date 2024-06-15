@@ -4,7 +4,6 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 const CardImage = ({arrayImg}) => {
-    console.log(arrayImg);
     const handleClick =  ({target}) => {
         if(!document.fullscreenElement){
             target.requestFullscreen().catch((err)=>console.log(err))
