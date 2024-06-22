@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { NavLink } from 'react-router-dom';
 import './Footer.scss'
 import { useLocation } from 'react-router-dom';
@@ -17,6 +17,7 @@ const Footer = () => {
         srcBibliography: srcBibliography,
         srcUsers: srcUsers,
     }
+    const refBibliography = useRef(null)
 
     const styleFooter = {'background' : 'rgba(154, 126, 95, 1)', }
     const styleLine = {'background' : 'rgba(191, 161, 129, 1)'}
@@ -45,13 +46,13 @@ const Footer = () => {
                 {/* <li style={styleLine} className="vertically-line"></li> */}
                 <li className="footer-list-item">
                     <li className="footer-list-item-drop">
-                        <button className='footer-list-item-drop-btn'>
+                        <button onClick={()=>{refBibliography.current.classList.toggle('footer-bibliography-list')}} className='footer-list-item-drop-btn'>
                             <img className="footer-list-item-a-img" src={`${srcDict.srcBibliography}`} alt="" />
                             <p style={styleText} className="footer-list-item-a-text">Библиография</p>
                         </button>
-                        <ul className='dropdown-list-footer'>
-                            <NavLink className='dropdown-list-footer-item' to='/bibliography/ru'>Библиография Россия</NavLink>
-                            <NavLink className='dropdown-list-footer-item' to='/bibliography/gb'>Библиография Британия</NavLink>
+                        <ul ref={refBibliography} className='dropdown-list-footer'>
+                            <NavLink className='dropdown-list-footer-item' to='/bibliography/ru'>Россия</NavLink>
+                            <NavLink className='dropdown-list-footer-item' to='/bibliography/gb'>Британия</NavLink>
                         </ul>
                     </li>
                     

@@ -29,12 +29,16 @@
                 text-align: left;
                 a{
                     color: rgba(11, 7, 1, 1);
-                    &:visited {
-                        color: rgba(204, 185, 165, 1);
+                    // &:visited {
+                    //     color: rgba(204, 185, 165, 1);
 
-                    }
+                    // }
                     &:hover{
                         color: rgba(154, 126, 95, 1);
+
+                    }
+                    &.active {
+                        color: rgba(204, 185, 165, 1);
 
                     }
                 }

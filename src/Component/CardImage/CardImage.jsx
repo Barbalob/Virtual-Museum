@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './CardImage.scss'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 const CardImage = ({arrayImg}) => {
+    const carousel = useRef(null);
     const handleClick =  ({target}) => {
         if(!document.fullscreenElement){
             target.requestFullscreen().catch((err)=>console.log(err))
@@ -14,12 +15,16 @@ const CardImage = ({arrayImg}) => {
     const items = arrayImg.map(item => {
         return (
             <figcaption style={{'overflowX':'hidden'}} className='card-image'>
-                    <img onClick={handleClick} src={`${item.srcImg}` } alt="" />
+                    <img  onClick={handleClick} src={`${item.srcImg}` } alt="" />
                     <figure className='card-image-text'>{item.descriptionImg}</figure>
             </figcaption>
         )
     })
     const handleDragStart = (e) => e.preventDefault();
+
+    useEffect(()=>{
+        carousel?.current?.slideTo(0)
+    },[carousel])
     
 
     // const items = [
@@ -41,8 +46,8 @@ const CardImage = ({arrayImg}) => {
                     </div>
                     : 
                     // disableButtonsControls 
-                   
-                    <AliceCarousel infinite   autoHeight={true}  swipeDelta={50} keyboardNavigation  items={items} />
+                    // autoHeight={true}
+                    <AliceCarousel ref={carousel} infinite autoHeight={true} activeIndex={1}  swipeDelta={50} keyboardNavigation  items={items} />
                 }
                 
                 {/* <AliceCarousel infinite swipeDelta={50} keyboardNavigation disableButtonsControls  items={items} /> */}

@@ -68,9 +68,9 @@
                 padding: 20px 24.5px;
                 border-radius:10px;
                 color:rgba(11, 7, 1, 1);
-                &:visited{
-                    color: rgba(154, 126, 95, 1);
-                }
+                // &:visited{
+                //     color: rgba(154, 126, 95, 1);
+                // }
             }
             img{
                 margin: 0 auto;
@@ -165,9 +165,7 @@
                     padding: 20px 24.5px;
                     border-radius:10px;
                     color:rgba(11, 7, 1, 1);
-                    &:visited{
-                        color: rgba(154, 126, 95, 1);
-                    }
+
                 }
                 img{
                     margin: 0 auto;
@@ -264,9 +262,6 @@
                     padding: 15px 19.5px;
                     border-radius:10px;
                     color:rgba(11, 7, 1, 1);
-                    &:visited{
-                        color: rgba(154, 126, 95, 1);
-                    }
                 }
                 img{
                     margin: 0 auto;
@@ -353,9 +348,6 @@
                     font-size: 12px;
                     line-height: 20px;
                     padding: 10px 15.5px;
-                    &:visited{
-                        color: rgba(154, 126, 95, 1);
-                    }
                 }
                 img{
                     margin: 0 auto;       

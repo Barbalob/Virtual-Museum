@@ -75,7 +75,7 @@
         }
         p{
             font-family: "Manrope", sans-serif;
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 400;
             line-height: 38px;
             text-align: center;
@@ -85,18 +85,25 @@
     }
 }
 
-.footer-list-item-drop:hover .dropdown-list-footer {
-    display: flex;
+// .footer-list-item-drop:hover .dropdown-list-footer {
+//     display: flex;
+//     gap: 12px;
+//     flex-direction: column;
+// }
+
+.footer-bibliography-list {
+    display: flex !important;
     gap: 12px;
     flex-direction: column;
 }
+
 .dropdown-list-footer {
     display: none;
     position: absolute;
     left: 50%;
     top: -80%;
     background: rgba(255, 255, 255, 1);
-    min-width: 300px;
+    min-width: 200px;
     padding: 12px;
     border-radius:10px;
     box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.12), 4px 4px 4px 0px rgba(0, 0, 0, 0.12);
@@ -246,7 +253,7 @@
         }
     }
     .dropdown-list-footer {
-        min-width: 250px;
+        min-width: 200px;
         padding: 12px;
         border-radius:10px;
         box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.12), 4px 4px 4px 0px rgba(0, 0, 0, 0.12);
@@ -370,7 +377,7 @@
     .dropdown-list-footer {
         left: -100px;
         top: -85px;
-        min-width: 200px;
+        min-width: 150px;
         padding: 12px;
         border-radius:10px;
         box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.12), 4px 4px 4px 0px rgba(0, 0, 0, 0.12);
@@ -382,7 +389,7 @@
             // align-items:center;
             gap: 6px;
             font-family: "Manrope", sans-serif;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 20px;
             text-align: left;

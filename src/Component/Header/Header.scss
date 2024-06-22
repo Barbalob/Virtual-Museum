@@ -102,8 +102,14 @@
     }
 }
 
-.nav-list-item:hover .dropdown-list {
-    display: flex;
+// .nav-list-item:hover .dropdown-list {
+//     display: flex;
+//     gap: 5px;
+//     flex-direction: column;
+// }
+
+.header-active-list{
+    display: flex !important;
     gap: 5px;
     flex-direction: column;
 }
@@ -540,11 +546,11 @@
         }
     }
 
-    .nav-list-item:hover .dropdown-list {
-        display: flex;
-        gap: 12px;
-        flex-direction: column;
-    }
+    // .nav-list-item:hover .dropdown-list {
+    //     display: flex;
+    //     gap: 12px;
+    //     flex-direction: column;
+    // }
     
     .dropdown-list {
         display: none;

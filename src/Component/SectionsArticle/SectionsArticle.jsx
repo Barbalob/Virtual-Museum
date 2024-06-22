@@ -30,7 +30,7 @@ const SectionsArticle = ({params, data}) => {
              </div>
             :""}
             {!!article ? 
-            <div className='sections'>
+            <div className='sections sections-chapter'>
                 <h3 className={styleName + "-title"}>Статьи раздела</h3>
                 <ul className={styleName}>
                     {article.map((section, index) => {

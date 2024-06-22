@@ -136,6 +136,10 @@ const Header = () => {
   //   setTimeout(()=>{console.log('time');}, 10)
   // }, [loc])
 
+  const listLinkRef = React.useRef(null)
+  const listBibRef = React.useRef(null)
+
+
   return (
     <div className='header'>
         <div className="logo">
@@ -155,9 +159,9 @@ const Header = () => {
           <ul className="nav-list">
 
             <li className="nav-list-item">
-              <button className='nav-list-item-btn'>Разделы</button>
+              <button  onClick={()=>{listLinkRef.current.classList.toggle('header-active-list')}} className='nav-list-item-btn'>Разделы</button>
               
-              <ul className='dropdown-list'>
+              <ul style={{zIndex:1000000}} ref={listLinkRef} className='dropdown-list'>
                 {
                 listLink.map(link=>{return CreateNav(link.data, link.href)})
                 }
@@ -165,8 +169,8 @@ const Header = () => {
             </li>
             <li className="nav-list-item">
               
-              <button className='nav-list-item-btn'>Библиография</button>
-              <ul className='dropdown-list dropdown-list-bibliography'>
+              <button onClick={()=>{listBibRef.current.classList.toggle('header-active-list')}} className='nav-list-item-btn'>Библиография</button>
+              <ul ref={listBibRef} className='dropdown-list dropdown-list-bibliography'>
                 <NavLink className='dropdown-list-item-bibliography' to='/bibliography/ru'>Россия</NavLink>
                 <NavLink className='dropdown-list-item-bibliography' to='/bibliography/gb'>Британия</NavLink>
               </ul>
