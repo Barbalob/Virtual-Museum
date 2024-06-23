@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './CardImage.scss'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { useLocation } from 'react-router-dom';
 
 const CardImage = ({arrayImg}) => {
     const carousel = useRef(null);
@@ -20,19 +21,8 @@ const CardImage = ({arrayImg}) => {
             </figcaption>
         )
     })
-    const handleDragStart = (e) => e.preventDefault();
 
-    useEffect(()=>{
-        carousel?.current?.slideTo(0)
-    },[carousel])
-    
 
-    // const items = [
-    //     <figcaption className='card-image'>
-    //                 <img src={`../../assets/CardImage/${srcImg}`} alt="" />
-    //                 <figure className='card-image-text'>{descriptionImg}</figure>
-    //     </figcaption>,
-    // ];
 
     return (
         <>
@@ -45,9 +35,8 @@ const CardImage = ({arrayImg}) => {
                         </figcaption>
                     </div>
                     : 
-                    // disableButtonsControls 
-                    // autoHeight={true}
-                    <AliceCarousel ref={carousel} infinite autoHeight={true} activeIndex={1}  swipeDelta={50} keyboardNavigation  items={items} />
+                    <AliceCarousel ref={carousel} autoHeight={true} lazyLoad={true} infinite  swipeDelta={50} keyboardNavigation  items={items} />
+                    
                 }
                 
                 {/* <AliceCarousel infinite swipeDelta={50} keyboardNavigation disableButtonsControls  items={items} /> */}
